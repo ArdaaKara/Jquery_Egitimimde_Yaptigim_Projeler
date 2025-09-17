@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Blog</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="title" content="blog pages">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="identifier-URL" content="">
+    <link rel="icon" href="./images/ap2.jpg">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- CSS  and JS and Jquery ui -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/js/main.js">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="35">
+    <!-- menu -->
+    <nav class="navbar fixed-top navbar-expand-sm bg-dark navbar-dark">
+        <div class="container">
+            <a href="/" class="navbar-brand">Logo</a>
+            <button class="navbar-toggler" data-target="#menu" data-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- div.collapse>ul.ml-auto>li.nav.item>a.nav-link{Home} -->
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="ml-auto navbar-nav">
+                    <li class="nav-item">
+                        <a href="/index.html" class="nav-link ">AMD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/index.html" class="nav-link ">İNTEL</a>
+                    </li>
+                </ul>
+                <ul class="ml-auto navbar-nav">
+                    <li class="nav-item">
+                        <a href="/index.html" class="nav-link ">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./sayfa1.htm" class="nav-link active">Hakkimizda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="iletisim" href="#iletisimm_" class="nav-link" >İletişim</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade" role="dialog" id="iletisimm_">
+        <div class="modal-dialog ">
+            <div class="modal-content bg-dark">
+                <div class="modal-header">
+                    <button class="close text-white" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <h3 class="text-white text-center">İletişim</h3>
+                        <form action="">
+                            <div class="form-group">
+                                <a href="" class="text-white">İsim/Soyisim</a>
+                                <input type="text" class="form-control" id="isimsoyisim" name="isimsoyisim" placeholder="İsim Soyisim" required>
+                            </div>
+                            <div class="form-group">
+                                <a href="" class="text-white">Email</a>
+                                <input type="email" class="form-control" id="iletisim_email" name="iletisim_email" placeholder="Email Adresiniz" required>
+                            </div>
+                            <div class="form-group">
+                                <a href="" class="text-white">Mesajınız</a>
+                                <textarea style="height: 300px; width: 440px;" name="mesajiniz" id="mesajiniz"></textarea>
+                            </div>
+                            <button type="reset" class="btn btn-danger">Temizle</button>
+                            <button type="submit" id="iletisim_btnSubmit" class="btn btn-primary">Gönder</button>          
+                        </form>
+                    </div>     
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="jumbotron text-white bg-dark">
+            <div class="container">
+                <h2 class="display-2" id="header-title-b">One Pages Blog</h2>
+                <p class="text-capitalize">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, vitae?
+                </p>
+                <a href="" class="btn btn-primary">Detay..</a>
+            </div>
+        </div>
+    </header>
+    <!-- main.container>div.row>div.col-md-8+div.col-md-4 -->
+    <main class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <!-- div.card>(img.card-img-top)+(div.card-body>h5.card-title{baslik}+p.card-text+button.btn{detay})+div.card-footer -->
+                <div class="card mb-4">
+                    <div class="card-header" style="text-align: center;">HAKKİMİZDA</div>
+                    <img src="/images/ap2.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">XXX Hakkımızda</h5>
+                        <!--    <p class="card-text text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                            commodi minus ullam quod dicta laudantium, eos aliquid alias perspiciatis porro, autem,
+                            maxime consequuntur modi! Et voluptates nam minus incidunt sed.</p> -->
+                        <div class="col-md-12">
+                            <div style="margin-left:20px;">
+                                Türkiye’nin 81 ilinde 10.981’i aşan mağazamız, 45 dağıtım merkezimiz ve 49.000’den fazla
+                                çalışanımızla, müşterilerimizin temel ihtiyaç maddelerinin tamamına yakınını “tek
+                                yerden” ve evlerine en yakın noktadan karşılamalarını sağlıyoruz.<p></p>
+                                <p>Mağaza ağımızı, müşterilerimize daha etkili ulaşabilmek amacıyla sürekli ve hızlı bir
+                                    biçimde genişletiyoruz.</p>
+                                <p>2015’in başından bu yana her gün ortalama 3 adet yeni mağaza açarak, 2015 yılında 699
+                                    adet, 2016’da 1.000 adet, 2017’de 1.100 adet, 2018’de 1.000 adet, 2019’da 851 adet,
+                                    2020’de 930 adet ve 2021’de 1.102 adet, 2022’de 1.034 adet, 2023’de 674* adet ve
+                                    2024 yılında 437* yeni mağaza açtık. (*Yeni mağaza açılışları, kapanan mağazaları
+                                    kapsamamaktadır.)</p>
+                                <p>Tüketici hafızasında tarihçesi olan ve geçmişte ulusal marka niteliğine sahip Mis,
+                                    Piyale, Mintax, Evin ve Amigo gibi markalara sahip çıkarak bu değerleri yeniden
+                                    ekonomiye kazandırdık. Köklü, nostaljik, marka algısı güçlü ve her biri kendi
+                                    alanında yüksek bilinirliğe sahip bu özgün markaları, uygun fiyatlara
+                                    müşterilerimize sunuyoruz.</p>
+                                <p>Zengin ürün portföyümüzde özgün markalarımız ile ulusal markaları da bir arada
+                                    bulundurarak, müşterimize daha çok seçenek sunuyoruz ve müşterilerimizin alışveriş
+                                    ihtiyacının tamamına yakınını karşılıyoruz. Müşterilerimize uygun fiyatlarla kolayca
+                                    ulaşabilecekleri yüksek kalitede ürünler sunuyoruz.</p>
+                                <p>Sebze meyve alanındaki uzmanlığımız ile temin edilen mahsülleri “dağıtım
+                                    merkezlerimizden mağazalarımıza” 24 saat içerisinde müşterilerimize en taze biçimde
+                                    ulaştırıyoruz.</p>
+                                <p>Kişisel bakım ve temizlik ürünlerinde Türkiye’nin en önemli perakendecilerinden
+                                    biriyiz. Müşterilerimize bu alanda geniş bir ürün çeşitliliği sunuyoruz.</p>
+                                <p>Farklılaşmış iş modelimiz, “her gün düşük fiyat” politikamız ve farklı formattaki
+                                    kampanyalarımızla müşterilerimize en iyi hizmeti vermeyi hedefliyoruz.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="opacity: 0.9;" class="card-footer">date 12 eylül 2025</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <!-- div.card>div.header>h6{aramaŞ}+div.card-body -->
+                <div class="card mb-5">
+                    <div class="header">
+                        <h6 style="text-align: center;">SEARCH</h6>
+                        <div class="card-body">
+                            <div class="input-group"><i class="fas fa-search"></i><input type="text" id="tags"class="form-control" placeholder="ARAMA ALANİ"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- div.card>div.card-header>h3{Sayfa}+div.card-body>div.row>(div.col-6> ul.list-unstyled>(li>a)*4)div.col-6>ul.list-unstyled>(li>a)*4 -->
+                <div class="card mt-3">
+                    <div class="card-header">
+                        <h5 class="text-center">En Çok Ziyaret Edilenler</h5>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <ul class="list-unstyled">
+                                        <li><a href="">23</a></li>
+                                        <li><a href="">23</a></li>
+                                        <li><a href="">23</a></li>
+                                        <li><a href="">23</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <ul class="list-unstyled">
+                                        <li><a href="">444</a></li>
+                                        <li><a href="">444</a></li>
+                                        <li><a href="">444</a></li>
+                                        <li><a href="">444</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="car bg-white">
+                    <div class="card-header">
+                        <h5>Tag Cloud</h5>
+                        <div class="card-body">
+                            <a class="btn btn-primary border-radius mt-1" href="">deneme-1</a>
+                            <a class="btn btn-primary border-radius mt-1" href="">deneme-2</a>
+                            <a class="btn btn-primary border-radius mt-1" href="">deneme-1</a>
+                            <a class="btn btn-primary border-radius mt-1" href="">deneme-2</a>
+                            <a class="btn btn-primary border-radius mt-1" href="">deneme-1</a>
+                            <a class="btn btn-primary border-radius mt-1" href="">deneme-2</a>
+                            <a class="btn btn-primary border-radius mt-1" href="">deneme-1</a>
+                            <a class="btn btn-primary border-radius mt-1" href="">deneme-2</a>
+                            <a class="btn btn-primary border-radius mt-1" href="">deneme-1</a>
+                            <a class="btn btn-primary border-radius mt-1" href="">deneme-2</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav aria-label="Page navigation example" style="margin-left: 30rem;">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Önceki</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">İleri</a></li>
+            </ul>
+        </nav>
+    </main>
+    <footer class="text-white bg-dark ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mt-5 border border-primary">
+                    <ul>
+                        <li><a href="">s</a></li>
+                        <li><a href="">s</a></li>
+                        <li><a href="">s</a></li>
+                        <li><a href="">s</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 mt-5 border border-danger">
+                    <p>BÜTÜN HAKLAR SAKLIDIR.&copy;</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+    <!--  -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- on pages main js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
