@@ -1,0 +1,83 @@
+/* 
+Project name:Blog Pages
+Porject Author:Arda Kara
+Project Year:12 Eylül 2025
+Project Version:1.0
+*/
+/* Config File */
+* {
+    box-sizing: border-box !important;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Merriweather", serif;
+    background-color: rgb(19, 19, 19);
+    position: relative;
+}
+
+html {
+    font-size: 15px;
+}
+
+.f20 {
+    font-size: .5rem;
+}
+
+/* nav */
+nav {
+    opacity: .9;
+}
+
+/* header */
+header .jumbotron {
+    background-image: url(/images/ap2.jpg);
+    background-size: cover;
+    background-position: 25% 50%;
+    padding-top: 12rem;
+    height: 40rem;
+    opacity: .9;
+    z-index: -1;
+    color: black;
+}
+
+#header-title-b {
+    text-transform: uppercase;
+
+}
+
+/* breadcrumb */
+nav ol.breadcrumb {
+    margin-top: -1.6%;
+    background-color: blueviolet !important;
+    opacity: .9;
+}
+
+.col-md-8 img:hover {
+    opacity: .9;
+
+}
+
+/* footer */
+footer {
+    min-height: 20rem;
+    min-width: auto;
+
+}
+
+.form-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box {
+    background-color: #343a40;
+    /* Bootstrap bg-dark rengi */
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+}
