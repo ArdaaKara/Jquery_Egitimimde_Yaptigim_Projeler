@@ -1,0 +1,61 @@
+/* *{
+    box-sizing: border-box!important;
+    padding: 0;
+    margin: 0;
+    
+} */
+body {
+    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;  
+    background-color: gray;
+}
+
+html{
+    font-size: 16px;
+
+}
+a{
+    color: white;
+    font-size: 1rem;
+}
+/* link start */
+/* instagram******* */
+.gradient-link {
+  background-color: black; /* Mevcut arka plan örnek */
+  display: inline-block;
+  text-decoration: none;
+}
+
+.gradient-link span {
+  background: linear-gradient(to right, red, pink);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-link:hover span {
+  background-position: right center;
+  text-shadow: 0 0 5px rgba(255, 0, 128, 0.5); /* hafif parlama efekti */
+}
+/* linkedin */
+.gradient-link-linkedn {
+  background-color: black; /* Mevcut arka plan örnek */
+  display: inline-block;
+  text-decoration: none;
+}
+
+.gradient-link-linkedn span {
+  background: linear-gradient(to right, rgb(1, 64, 146), rgb(38, 35, 218));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-link-linkedn:hover span {
+  background-position: right center;
+  text-shadow: 0 0 5px rgba(31, 1, 165, 0.5); /* hafif parlama efekti */
+}
+/* link finish */
