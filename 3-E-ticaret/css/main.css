@@ -10,7 +10,6 @@ body {
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;  
-    background-color: gray;
 }
 
 html{
@@ -59,3 +58,43 @@ a{
   text-shadow: 0 0 5px rgba(31, 1, 165, 0.5); /* hafif parlama efekti */
 }
 /* link finish */
+/* */
+.popover-wrapper {
+    position: relative;
+}
+
+.form-control {
+    border: 2px solid #ccc; /* Kenar rengi */
+    border-radius: 5px; /* Kenar yuvarlama */
+    margin-top: 25px;
+    padding: 10px; /* İç boşluk */
+    transition: border-color 0.3s; /* Kenar rengi geçişi */
+}
+
+.input-placeholder {
+    position: absolute;
+    left: 10px; /* Sol boşluk */
+    top: 10px; /* Üst boşluk */
+    color: #4e4e4e; /* Placeholder rengi */
+    transition: 0.2s ease all; /* Geçiş efekti */
+    pointer-events: none; /* Tıklanamaz hale getirme */
+}
+
+.form-control:focus {
+    border-color: rgb(0, 0, 0); /* Odaklandığında kenar rengi */
+}
+
+.form-control:focus + .input-placeholder,
+.form-control:not(:placeholder-shown) + .input-placeholder {
+    top: -20px; /* Yukarı kaydırma */
+    left: 10px; /* Sol boşluk */
+    font-size: 12px; /* Yazı boyutu */
+    color: rgb(0, 0, 0); /* Yazı rengi */
+}
+
+.input-placeholder-required {
+    margin-left: 2px; /* Zorunlu işareti için boşluk */
+}
+
+
+/*  */

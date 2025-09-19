@@ -5,10 +5,20 @@
     <title>E-ticaret</title>
     <link rel="icon" href="content/picture/57589.png" type="image/png">
 
+
+
+
+
+
+
+    <!-- cdn son -->
+
     <!-- Required meta tags -->
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -18,9 +28,11 @@
     <!-- cdn -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <!-- cdn bitis -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
 
 </head>
 
@@ -39,7 +51,10 @@
                         <a class="nav-link" href="#">Anasayfa<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">Kategoriler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Yardım</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
@@ -54,25 +69,28 @@
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
                     <li class="nav-item">
                         <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="text" placeholder="Ara">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><span
-                                    class="fas fa-search"></span></button>
+                            <input id="#tags" class="form-control mr-sm-2 my-sm-0 " type="text" placeholder="Ara">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                                <span class="fas fa-search">
+                                </span>
+                            </button>
                         </form>
                     </li>
                 </ul>
                 <ul class="navbar-nav navbar-right">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false"><span class="fas fa-user"></span> Üye</a>
+                            aria-haspopup="true" aria-expanded="false"><span class="fas fa-user"></span></a>
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#">Giriş yap</a>
-                            <a class="dropdown-item" href="#">Kayıt ol</a>
+                            <a class="dropdown-item" href="#" id="btn_giris">Giriş yap</a>
+                            <a class="dropdown-item" href="#" id="btn_kayit">Kayıt ol</a>
+                            <a class="dropdown-item" href="#"><span class="fas fa-door-open"></span> Çıkış </a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false"><span class="fas fa-shopping-basket"></span>
-                            Sepet</a>
+                            aria-haspopup="true" aria-expanded="false"><span class="fas fa-shopping-basket"></span><span
+                                class="badge badge-percent">(2)</span></a>
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
                             <a class="dropdown-item" href="#">Action 1</a>
                             <a class="dropdown-item" href="#">Action 2</a>
@@ -86,21 +104,16 @@
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
                             <a class="dropdown-item" href="#">Action 1</a>
                             <a class="dropdown-item" href="#">Action 2</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><span class="fas fa-file"></span>Kuponlar </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false"><span class="fas fa-envelope"></span> Mesaj</a>
+
+                            <!--  -->
+                            <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="dropdownId" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"><span class="fas fa-envelope"></span> Mesaj<span
+                                class="badge badge-percent">(2)</span></a>
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
                             <a class="dropdown-item" href="#">Action 1</a>
                             <a class="dropdown-item" href="#">Action 2</a>
                         </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><span class="fas fa-door-open"></span> Çıkış </a>
+                        </div>
                     </li>
                 </ul>
                 <!-- </div> -->
@@ -110,60 +123,266 @@
     <main>
         <!-- div class="container44">
         <div class="row44"> -->
-        <div id="carouselId" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselId" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselId" data-slide-to="1"></li>
-                <li data-target="#carouselId" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner" role="listbox" >
-                <div class="carousel-item active">
-                    <img src="https://placehold.co/1400x500" width="100%"
-                        data-src="holder.js/900x500/auto/#777:#555/text:First slide" alt="First slide">
-                    <div class="carousel-caption d-none d-md-block "style="color: black;">
-                        <h5 >Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                    </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div id="carouselId" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselId" data-slide-to="1"></li>
+                        <li data-target="#carouselId" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img src="https://placehold.co/1400x500" width="100%"
+                                data-src="holder.js/900x500/auto/#777:#555/text:First slide" alt="First slide">
+                            <div class="carousel-caption d-none d-md-block " style="color: black;">
+                                <h5>Third slide label</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                            </div>
 
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://placehold.co/1400x500" width="100%"
+                                data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide">
+                            <div class="carousel-caption d-none d-md-block " style="color: black;">
+                                <h5>Third slide label</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="https://placehold.co/1400x500" width="100%"
+                                data-src="holder.js/900x500/auto/#666:#444/text:Third slide" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block " style="color: black;">
+                                <h5>Third slide label</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
-                <div class="carousel-item">
-                    <img src="https://placehold.co/1400x500" width="100%"
-                        data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide">
-                        <div class="carousel-caption d-none d-md-block "style="color: black;">
-                        <h5 >Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
+
+            </div>
+
+
+            <p class=" text-center display-4 font-weight-bold mt-3 mb-2" style="font-size: 2rem; color: black; ">ÜRÜNLER
+            </p>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <a href="">
+                            <img class="card-img-top img-fluid" src="https://placehold.co/250x150" alt="resim yok">
+                        </a>
+
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Başlık</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae,
+                                eligendi?</p>
+                            <a href="#" class="btn btn-primary"><span class="fas fa-shopping-basket"></span>Sepet</a>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="carousel-item">
-                    <img src="https://placehold.co/1400x500" width="100%"
-                        data-src="holder.js/900x500/auto/#666:#444/text:Third slide" alt="Third slide">
-                        <div class="carousel-caption d-none d-md-block "style="color: black;">
-                        <h5 >Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
+                <!--  -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="https://placehold.co/250x150" alt="resim yok">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Başlık</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae,
+                                eligendi?</p>
+                            <a href="#" class="btn btn-primary"><span class="fas fa-shopping-basket"></span>Sepet</a>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="https://placehold.co/250x150" alt="resim yok">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Başlık</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae,
+                                eligendi?</p>
+                            <a href="#" class="btn btn-primary"><span class="fas fa-shopping-basket"></span>Sepet</a>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="https://placehold.co/250x150" alt="resim yok">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Başlık</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae,
+                                eligendi?</p>
+                            <a href="#" class="btn btn-primary"><span class="fas fa-shopping-basket"></span>Sepet</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 1 SATIR SON-->
+                <div class="col-md-3 mt-4 mb-4">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="https://placehold.co/250x150" alt="resim yok">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Başlık</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae,
+                                eligendi?</p>
+                            <a href="#" class="btn btn-primary"><span class="fas fa-shopping-basket"></span>Sepet</a>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-md-3 mt-4 mb-4">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="https://placehold.co/250x150" alt="resim yok">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Başlık</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae,
+                                eligendi?</p>
+                            <a href="#" class="btn btn-primary"><span class="fas fa-shopping-basket"></span>Sepet</a>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-md-3 mt-4 mb-4">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="https://placehold.co/250x150" alt="resim yok">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Başlık</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae,
+                                eligendi?</p>
+                            <a href="#" class="btn btn-primary"><span class="fas fa-shopping-basket"></span>Sepet</a>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-md-3 mt-4 mb-4">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="https://placehold.co/250x150" alt="resim yok">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Başlık</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae,
+                                eligendi?</p>
+                            <a href="#" class="btn btn-primary"><span class="fas fa-shopping-basket"></span>Sepet</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+            <p class=" text-center display-4 font-weight-bold mt-3 mb-2" style="font-size: 2rem; color: black; ">ÇOK
+                SATANLAR
+            </p>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <a href="">
+                            <img class="card-img-top img-fluid" src="https://placehold.co/250x150" alt="resim yok">
+                        </a>
+
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Başlık</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae,
+                                eligendi?</p>
+                            <a href="#" class="btn btn-primary"><span class="fas fa-shopping-basket"></span>Sepet</a>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="https://placehold.co/250x150" alt="resim yok">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Başlık</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae,
+                                eligendi?</p>
+                            <a href="#" class="btn btn-primary"><span class="fas fa-shopping-basket"></span>Sepet</a>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="https://placehold.co/250x150" alt="resim yok">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Başlık</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae,
+                                eligendi?</p>
+                            <a href="#" class="btn btn-primary"><span class="fas fa-shopping-basket"></span>Sepet</a>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="https://placehold.co/250x150" alt="resim yok">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Başlık</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae,
+                                eligendi?</p>
+                            <a href="#" class="btn btn-primary"><span class="fas fa-shopping-basket"></span>Sepet</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum mollitia saepe voluptatum beatae itaque a
-            aspernatur dolores, totam voluptas adipisci rerum qui iure. Deleniti, fugit. Eaque nesciunt quas ad,
-            quisquam nemo perspiciatis harum rerum fugit alias delectus corporis sunt illo aliquam praesentium iure
-            voluptatem. In ab nihil numquam corrupti. Eligendi facilis iusto aliquid, sit placeat quaerat quibusdam
-            magni nam culpa quae ab facere voluptate, distinctio fugit totam unde alias animi? Tempore veniam qui odio
-            architecto temporibus corporis doloremque, enim earum reprehenderit animi vero a sapiente illum laborum
-            harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia inventore sequi odio suscipit facilis omnis dolor, recusandae voluptates nobis debitis! Atque, cum. Animi dignissimos hic officiis impedit distinctio quas quo quaerat quam deleniti cumque porro molestiae veritatis quia a rerum enim, incidunt facilis aliquam maxime autem consequatur voluptatem vel assumenda. Culpa molestiae consectetur totam ducimus, alias beatae corrupti, vitae harum asperiores, esse non! Quaerat quis architecto ipsum. Laborum delectus id minus debitis repellat labore. Laboriosam et, quia saepe odio similique quibusdam incidunt eos perspiciatis explicabo at id assumenda amet doloribus delectus repellat fuga commodi neque hic molestiae sit consequatur enim mollitia. Quae velit temporibus sequi vel obcaecati reprehenderit, doloribus dolore blanditiis quis ut repudiandae rerum dignissimos facere, dolorum minus, expedita pariatur accusamus animi! Vitae praesentium ducimus officia porro fugit quos, dolorum commodi voluptatum in? Consequatur, laudantium impedit rem quos aspernatur iusto ipsa earum eum voluptas esse officiis suscipit itaque quasi, temporibus labore harum eius. Perferendis vitae aliquam labore nihil, at natus amet praesentium molestias sunt incidunt blanditiis fuga aperiam voluptate itaque, eos illo est porro dolor dignissimos ducimus veritatis delectus dolorem. Eveniet voluptatum magni iure, quos cum, odit velit reprehenderit blanditiis ullam dolorum est in debitis ratione, aperiam consequatur ducimus provident non nisi quis fuga mollitia earum vero quibusdam magnam. Iste, qui minima explicabo repellat dignissimos voluptate voluptas dolore numquam consequuntur. Vel quas nemo fuga optio aliquid omnis sequi laudantium impedit quo. Neque sed laudantium consequuntur voluptates, pariatur esse ratione velit, iusto odio officiis laborum reprehenderit quia, facere quaerat alias eum. Placeat neque ut aspernatur eum minima reiciendis culpa cumque rerum totam beatae modi magnam alias natus asperiores quam dolores cupiditate fugit, consequuntur quo? Veritatis, ullam sint tenetur illo maxime et adipisci, unde eaque molestiae mollitia odio amet animi repellendus praesentium ipsa aperiam corrupti iure perferendis ut qui provident excepturi? Fugit eos dolor animi necessitatibus laboriosam. Atque, tenetur reprehenderit. Doloremque placeat repudiandae dolores ex quo, facilis deleniti blanditiis esse beatae! Inventore tenetur rerum rem enim quibusdam sapiente voluptas sequi dolorum veniam velit, natus molestiae, accusamus quis expedita. Vel quis incidunt eius culpa, est aliquam neque a vitae eveniet id ex facere placeat, dolorum tenetur, voluptatum officia odio? Quidem, et ipsam laborum illum accusantium ratione repellat, ab ipsa repudiandae error, inventore dolore magni sint voluptatum iusto earum nisi blanditiis harum maiores suscipit neque dolorum? Ex repellat vitae harum quae nulla tempore dolores, quo rerum qui in fugit impedit nisi quasi, odit deserunt veritatis commodi excepturi minima dolorum, vero voluptatibus sequi? Esse, doloribus qui laudantium a quae asperiores eaque et placeat sequi veritatis suscipit officia tempore? Pariatur officiis ratione voluptatem odit possimus ullam maiores modi. Repellat tempora quisquam delectus et neque. Ut officia fugiat nostrum rem quis vel, sapiente veritatis architecto laboriosam eveniet quam delectus esse dicta nobis, ad, eius hic vitae laborum magnam alias cumque? Itaque ipsum sit obcaecati possimus libero beatae, nam aspernatur. Reiciendis iure dignissimos, animi ducimus earum ex amet id consequatur. Nihil aut odio facere nemo nisi quaerat facilis ad eius dolore. Ad officiis, expedita debitis dolores maiores consequatur minima, id, dolor nulla ab amet. Eaque eius harum nisi cum est ipsam officia distinctio repellat earum aliquid deserunt sapiente illum beatae saepe quisquam, reprehenderit at illo quos voluptatem assumenda! Provident fugiat illum nemo, quo repellat temporibus facilis molestiae vitae veritatis impedit ab aut magni obcaecati sapiente saepe, aliquam quae nostrum, animi laudantium. Molestiae eos laboriosam quam tempora ipsa illum, voluptates eveniet culpa unde aspernatur adipisci. Architecto temporibus facere veniam aperiam eius doloribus ducimus laudantium explicabo, illo iste tempore ea vitae modi molestiae vel accusamus qui nihil eum assumenda ipsum? Accusamus, exercitationem quas hic minus quod, cupiditate consequatur numquam voluptates autem fugiat enim molestias alias rerum, facere eum dignissimos praesentium quia possimus cum assumenda! Ut aperiam sit recusandae nemo, incidunt aliquam maxime atque cum, accusamus molestiae ad ea dolore ducimus eveniet labore ipsam ullam quam reiciendis consequatur repellat, asperiores dignissimos quos vel. Illum ullam explicabo dignissimos cupiditate suscipit excepturi hic, sequi aliquid tenetur vitae, amet quas corporis molestiae laudantium! Dolore, saepe! Consequuntur illum perspiciatis voluptates provident veritatis error enim inventore, quia ipsam et dolorum accusamus nesciunt commodi, numquam minima eos repellendus voluptate deserunt sint natus nisi? Dolores ducimus sint aut odio eligendi. Non sint esse distinctio nam, ratione consequuntur modi a veniam vero quis eaque reiciendis impedit rem earum laudantium nostrum eos id odio. Consequatur dicta officiis nostrum aliquid? Velit adipisci praesentium, eos dolor, deserunt quibusdam tenetur quo harum beatae voluptatum amet, repellendus debitis molestias itaque maiores asperiores dignissimos accusamus exercitationem dolorum. Voluptatum nisi ex repellendus ratione maiores! Alias voluptas nihil quas dolorum qui beatae cupiditate excepturi quibusdam quis repellendus, perferendis, voluptates ipsam ipsum ab est. Non maiores sunt saepe quae odio iure quis pariatur totam dolor, doloremque repellendus debitis vero perferendis labore rerum rem esse ipsum facilis similique, veniam praesentium nisi quibusdam. Dicta ratione nemo earum nam esse. Omnis quod unde eos tempore dolorem deserunt doloremque tenetur eveniet in quisquam veritatis natus inventore, quasi, assumenda mollitia culpa nulla, tempora id nisi incidunt eius perferendis impedit. Totam reprehenderit eaque sint optio corporis molestiae dolor nulla illo perspiciatis similique illum et, facilis accusamus sequi quae earum, exercitationem necessitatibus voluptas assumenda! Labore asperiores quasi ratione dignissimos mollitia illo aliquam molestiae omnis officia impedit magnam dolorum fugiat, iure unde aperiam, modi suscipit reiciendis eum aut sint? Iusto, praesentium voluptatem eius numquam tempore minus nemo illo. Ad dolores ratione possimus deserunt.</p>
+        <div class="accordion accordion-flush " id="accordionFlushExample" s>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Accordion Item #1
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                        the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Accordion Item #2
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                        the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine
+                        this being filled with some actual content.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Accordion Item #3
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                        the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
+                        exciting happening here in terms of content, but just filling up the space to make it look, at
+                        least at first glance, a bit more representative of how this would look in a real-world
+                        application.</div>
+                </div>
+            </div>
+        </div>
+
+
+
     </main>
     <!-- footer start -->
     <footer class="fixed-bottom44"
         style="background-color: rgb(0, 0, 0); color: white; text-align: center; height: 290px;">
+
         <div class="row">
             <div class="row">
                 <div class="col-4" style="margin-top: 80px;"><!-- Sol taraf -->
@@ -194,12 +413,170 @@
             </div>
     </footer>
     <!-- footer end -->
+    <!-- uye modal start-->
+    <!-- div.modal>div.modal-dialog>div.modal-content>(div.modal-header>button.close+h5.modal-title)+(div.modal-body)+(div.modal-footer>button.btn) -->
+    <div class="modal fade" id="myUye" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal">&times;</button>
+                    <h5 class="modal-title"></h5>
+                </div>
+                <div class="modal-body"></div>
+                <!-- div.container>h3{Uye Grisi}+form>(div.form-group>label+input.form-control)*3 -->
+                <div class="container">
+                    <h3 style="text-align: center;">Giriş yap</h3>
+                    <form action="">
+                        <!--  -->
+                        <div class="col-12"><!---->
+                            <div class="w-100 popover-wrapper position-relative mb-1"><input type="text" placeholder=""
+                                    name="name" id="eposta_giris"
+                                    class="form-control form-control-md loaded form-control-placeholder form-control-placeholder-hidden"
+                                    data-toggle="placeholder" data-validate="required"><span
+                                    class="input-placeholder">E-posta adresinizi giriniz<span
+                                        class="input-placeholder-required fw-bold text-danger">*</span></span></div>
+                        </div>
+
+                        <!--  -->
+                        <div class="col-12"><!---->
+                            <div class="w-100 popover-wrapper position-relative mb-1"><input type="text" placeholder=""
+                                    name="name" id="password"
+                                    class="form-control form-control-md loaded form-control-placeholder form-control-placeholder-hidden"
+                                    data-toggle="placeholder" data-validate="required"><span
+                                    class="input-placeholder">Şifrenizi giriniz<span
+                                        class="input-placeholder-required fw-bold text-danger">*</span></span></div>
+                        </div>
+
+                        <div class="form-group mt-3 ml-3 ">
+                                <label for=""><input type="checkbox" class="form-checkbox" required>Beni hatırla</label>
+                                <a href="#" style="color:black; margin-left: 255px;"  id="btn_sifre">ŞİFREMİ UNUTTUM</a>
+                        </div>
+
+                        <!-- <div class="form-group "><label for=""><input type="checkbox" class="form-checkbox" required><a href="" style="color: black;"> Sözleşmeyi</a> okudum ve kabul ediyorum.</label> -->
+                    </form>
+                </div>
+                <div class="modal-footer"><button class="btn btn-primary" style="width: 100%;"
+                        data-dismiss="modal">Giriş yap</button></div>
+            </div>
+        </div>
+    </div>
+    <!-- uye modal end -->
+    <!-- uye ol modal start -->
+    <div class="modal fade" id="myUyeol" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal">&times;</button>
+                    <h5 class="modal-title"></h5>
+                </div>
+                <div class="modal-body"></div>
+                <!-- div.container>h3{Uye Grisi}+form>(div.form-group>label+input.form-control)*3 -->
+                <div class="container">
+                    <h3 style="text-align: center;">KAYIT OL</h3>
+                    <form action="">
+                        <!--  -->
+                        <div class="col-12"><!---->
+                            <div class="w-100 popover-wrapper position-relative mb-1"><input type="text" placeholder=""
+                                    name="name" id="eposta_giris"
+                                    class="form-control form-control-md loaded form-control-placeholder form-control-placeholder-hidden"
+                                    data-toggle="placeholder" data-validate="required"><span
+                                    class="input-placeholder">Ad<span
+                                        class="input-placeholder-required fw-bold text-danger">*</span></span></div>
+                        </div>
+                        <div class="col-12"><!---->
+                            <div class="w-100 popover-wrapper position-relative mb-1"><input type="text" placeholder=""
+                                    name="name" id="eposta_giris"
+                                    class="form-control form-control-md loaded form-control-placeholder form-control-placeholder-hidden"
+                                    data-toggle="placeholder" data-validate="required"><span
+                                    class="input-placeholder">Soyad<span
+                                        class="input-placeholder-required fw-bold text-danger">*</span></span></div>
+                        </div>
+                        <div class="col-12"><!---->
+                            <div class="w-100 popover-wrapper position-relative mb-1"><input type="text" placeholder=""
+                                    name="name" id="eposta_giris"
+                                    class="form-control form-control-md loaded form-control-placeholder form-control-placeholder-hidden"
+                                    data-toggle="placeholder" data-validate="required"><span
+                                    class="input-placeholder">E-posta adresinizi giriniz<span
+                                        class="input-placeholder-required fw-bold text-danger">*</span></span></div>
+                        </div>
+
+                        <!--  -->
+                        <div class="col-12"><!---->
+                            <div class="w-100 popover-wrapper position-relative mb-1"><input type="text" placeholder=""
+                                    name="name" id="password"
+                                    class="form-control form-control-md loaded form-control-placeholder form-control-placeholder-hidden"
+                                    data-toggle="placeholder" data-validate="required"><span
+                                    class="input-placeholder">Şifrenizi giriniz<span
+                                        class="input-placeholder-required fw-bold text-danger">*</span></span></div>
+                        </div>
+                        <div class="col-12"><!---->
+                            <div class="w-100 popover-wrapper position-relative mb-1"><input type="text" placeholder=""
+                                    name="name" id="password"
+                                    class="form-control form-control-md loaded form-control-placeholder form-control-placeholder-hidden"
+                                    data-toggle="placeholder" data-validate="required"><span
+                                    class="input-placeholder">Şifrenizi Tekrar giriniz<span
+                                        class="input-placeholder-required fw-bold text-danger">*</span></span></div>
+                        </div>
+
+                        <div class="form-group mt-3 ml-3"><label for=""><input type="checkbox" class="form-checkbox"
+                                    required>
+                                Sözleşmeyi Okudum, Kabul ediyorum.</label></div>
+
+                        <!-- <div class="form-group "><label for=""><input type="checkbox" class="form-checkbox" required><a href="" style="color: black;"> Sözleşmeyi</a> okudum ve kabul ediyorum.</label> -->
+                    </form>
+                </div>
+                <div class="modal-footer"><button class="btn btn-primary" style="width: 100%;"
+                        data-dismiss="modal">KAYIT OL</button></div>
+            </div>
+        </div>
+    </div>
+    <!-- uye ol modal end -->
+    <!-- sifremi unuttum start -->
+     <div class="modal fade" id="mySifre" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal">&times;</button>
+                    <h5 class="modal-title"></h5>
+                </div>
+                <div class="modal-body"></div>
+                <!-- div.container>h3{Uye Grisi}+form>(div.form-group>label+input.form-control)*3 -->
+                <div class="container">
+                    <h3 style="text-align: center;">ŞİFRE SIFIRLAMA</h3>
+                    <form action="">
+                        <!--  -->
+                        <div class="col-12"><!---->
+                            <div class="w-100 popover-wrapper position-relative mb-1"><input type="text" placeholder=""
+                                    name="name" id="eposta_giris"
+                                    class="form-control form-control-md loaded form-control-placeholder form-control-placeholder-hidden"
+                                    data-toggle="placeholder" data-validate="required"><span
+                                    class="input-placeholder">E-posta adresinizi giriniz<span
+                                        class="input-placeholder-required fw-bold text-danger">*</span></span></div>
+                        </div>
+
+                        <!--  -->
+
+                        <!-- <div class="form-group "><label for=""><input type="checkbox" class="form-checkbox" required><a href="" style="color: black;"> Sözleşmeyi</a> okudum ve kabul ediyorum.</label> -->
+                    </form>
+                </div>
+                <div class="modal-footer"><button class="btn btn-primary" style="width: 100%;"
+                        data-dismiss="modal">GÖNDER</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- sifremi unuttum end -->
+
     <!-- JS -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.css"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <link rel="node_modules/bootstrap/dist/css/bootstrap.css">
+    </link>
     <script src="js/main.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
