@@ -4,15 +4,7 @@
 <head>
     <title>E-ticaret</title>
     <link rel="icon" href="content/picture/57589.png" type="image/png">
-
-
-
-
-
-
-
     <!-- cdn son -->
-
     <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -28,18 +20,16 @@
     <!-- cdn -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
     <!-- cdn bitis -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-dark bg-black fixed-top">
-            <a class="navbar-brand" href="#">Logo</a>
+            <a class="navbar-brand" href="index.htm">Logo</a>
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
                 data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -48,11 +38,26 @@
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Anasayfa<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.htm">Anasayfa<span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Kategoriler</a>
-                    </li>
+                    <li class="nav-item"><!--  -->
+                        <li class="dropdown">Kategoriler
+                <ul class="dropdown-content">
+                    <li>Yeni Çıkanlar</li>
+                    <li>Çok Satanlar</li>
+                    <li>Yazarlar</li>
+                    <li>Edebiyat</li>
+                    <li>Roman</li>
+                    <li>Kişisel Gelişim</li>
+                    <li>Çocuk ve Gençlik</li>
+                    <li>Araştırma - Tarih</li>
+                    <li>Yabancı Dilde Kitaplar</li>
+                    <li>Çizgi Roman ve Manga</li>
+                    <li>Felsefe Kitapları</li>
+                    <li>E-Kitaplar</li>
+                </ul>
+                        
+                    </li><!--  -->
                     <li class="nav-item">
                         <a class="nav-link" href="#">Yardım</a>
                     </li>
@@ -77,13 +82,15 @@
                         </form>
                     </li>
                 </ul>
-                <ul class="navbar-nav navbar-right">
+                <ul class="navbar-nav navbar-right mr-5">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false"><span class="fas fa-user"></span></a>
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
                             <a class="dropdown-item" href="#" id="btn_giris">Giriş yap</a>
                             <a class="dropdown-item" href="#" id="btn_kayit">Kayıt ol</a>
+                            <a class="dropdown-item" href="#" id=""><span
+                                    class="fas fa-user-astronaut"></span>Profilim</a>
                             <a class="dropdown-item" href="#"><span class="fas fa-door-open"></span> Çıkış </a>
                         </div>
                     </li>
@@ -92,8 +99,8 @@
                             aria-haspopup="true" aria-expanded="false"><span class="fas fa-shopping-basket"></span><span
                                 class="badge badge-percent">(2)</span></a>
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#">Action 1</a>
-                            <a class="dropdown-item" href="#">Action 2</a>
+                            <a class="dropdown-item btn btn-primary" href="#" id="btn_sepet">Sepet</a>
+                            <a class="dropdown-item btn btn-primary" href="ordered.htm" id="">Siparislerim</a>
                         </div>
                     </li>
                     <!-- <div style="display: none;"> -->
@@ -102,17 +109,17 @@
                             aria-haspopup="true" aria-expanded="false"><span class="fas fa-info-circle"></span>
                             Bilgiler</a>
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#">Action 1</a>
+                            <a class="dropdown-item" href="ordered.htm">Siparişlerim</a>
                             <a class="dropdown-item" href="#">Action 2</a>
-
                             <!--  -->
-                            <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="dropdownId" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false"><span class="fas fa-envelope"></span> Mesaj<span
-                                class="badge badge-percent">(2)</span></a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#">Action 1</a>
-                            <a class="dropdown-item" href="#">Action 2</a>
-                        </div>
+                            <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="dropdownId"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span
+                                    class="fas fa-envelope"></span> Mesaj<span
+                                    class="badge badge-percent">(2)</span></a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#">Action 1</a>
+                                <a class="dropdown-item" href="#">Action 2</a>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -139,7 +146,6 @@
                                 <h5>Third slide label</h5>
                                 <p>Some representative placeholder content for the third slide.</p>
                             </div>
-
                         </div>
                         <div class="carousel-item">
                             <img src="https://placehold.co/1400x500" width="100%"
@@ -149,7 +155,6 @@
                                 <p>Some representative placeholder content for the third slide.</p>
                             </div>
                         </div>
-
                         <div class="carousel-item">
                             <img src="https://placehold.co/1400x500" width="100%"
                                 data-src="holder.js/900x500/auto/#666:#444/text:Third slide" alt="Third slide">
@@ -168,23 +173,18 @@
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
-
             </div>
-
-
             <p class=" text-center display-4 font-weight-bold mt-3 mb-2" style="font-size: 2rem; color: black; ">ÜRÜNLER
             </p>
             <div class="row">
                 <div class="col-md-3">
                     <div class="card">
-                        <a href="">
-                            <img class="card-img-top img-fluid" src="https://placehold.co/250x150" alt="resim yok">
+                        <a href="#">
+                            <img style="width: 100%; height: 250px; object-fit: contain; " id="SefillerFoto" src="" class="card-img-top img-fluid" alt="">
                         </a>
-
                         <div class="card-body">
-                            <h4 class="card-title text-center">Başlık</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae,
-                                eligendi?</p>
+                            <h4 id="SefillerAdi" class="card-title text-center"></h4>
+                            <p id="SefillerHakkinda" class="card-text ellipsed"></p>
                             <a href="#" class="btn btn-primary"><span class="fas fa-shopping-basket"></span>Sepet</a>
                         </div>
                     </div>
@@ -195,7 +195,7 @@
                         <img class="card-img-top img-fluid" src="https://placehold.co/250x150" alt="resim yok">
                         <div class="card-body">
                             <h4 class="card-title text-center">Başlık</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae,
+                            <p class="card-text ellipsed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae,
                                 eligendi?</p>
                             <a href="#" class="btn btn-primary"><span class="fas fa-shopping-basket"></span>Sepet</a>
                         </div>
@@ -274,20 +274,17 @@
                     </div>
                 </div>
             </div>
-            <p class=" text-center display-4 font-weight-bold mt-3 mb-2" style="font-size: 2rem; color: black; ">ÇOK
-                SATANLAR
-            </p>
+            <p class=" text-center display-4 font-weight-bold mt-3 mb-2" style="font-size: 2rem; color: black; ">
+                ÇOKSATANLAR</p>
             <div class="row">
                 <div class="col-md-3">
                     <div class="card">
-                        <a href="">
-                            <img class="card-img-top img-fluid" src="https://placehold.co/250x150" alt="resim yok">
-                        </a>
-
+                        <a href=""><img class="card-img-top img-fluid" src="https://placehold.co/250x150"
+                                alt="resim yok"></a>
                         <div class="card-body">
                             <h4 class="card-title text-center">Başlık</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae,
-                                eligendi?</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quae,eligendi?</p>
                             <a href="#" class="btn btn-primary"><span class="fas fa-shopping-basket"></span>Sepet</a>
                         </div>
                     </div>
@@ -298,8 +295,8 @@
                         <img class="card-img-top img-fluid" src="https://placehold.co/250x150" alt="resim yok">
                         <div class="card-body">
                             <h4 class="card-title text-center">Başlık</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae,
-                                eligendi?</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quae,eligendi?</p>
                             <a href="#" class="btn btn-primary"><span class="fas fa-shopping-basket"></span>Sepet</a>
                         </div>
                     </div>
@@ -310,8 +307,8 @@
                         <img class="card-img-top img-fluid" src="https://placehold.co/250x150" alt="resim yok">
                         <div class="card-body">
                             <h4 class="card-title text-center">Başlık</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae,
-                                eligendi?</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quae,eligendi?</p>
                             <a href="#" class="btn btn-primary"><span class="fas fa-shopping-basket"></span>Sepet</a>
                         </div>
                     </div>
@@ -375,15 +372,11 @@
                 </div>
             </div>
         </div>
-
-
-
     </main>
     <!-- footer start -->
     <footer class="fixed-bottom44"
         style="background-color: rgb(0, 0, 0); color: white; text-align: center; height: 290px;">
-
-        <div class="row">
+        <div class="row44">
             <div class="row">
                 <div class="col-4" style="margin-top: 80px;"><!-- Sol taraf -->
                     <h3>Bağlantılar</h3>
@@ -403,7 +396,7 @@
                     <h3>İletişim</h3>
                     <p>Email: info@hotmail.com<br>Phone: +0555 555 55 55<br>Adress: İzmir/Turkey</p>
                 </div>
-                <div class="card-body fixed-bottom " style="opacity: 50%; background-color: black;">
+                <div class="fixed-bottom44 " style=" background-color: black;">
                     <a href="" style="margin-right: 20px;" class="gradient-link"><span
                             class="fab fa-instagram"></span><span>instagram</span></a>
                     <a href="" class="gradient-link-linkedn"><span class="fab fa-linkedin"></span>
@@ -415,11 +408,13 @@
     <!-- footer end -->
     <!-- uye modal start-->
     <!-- div.modal>div.modal-dialog>div.modal-content>(div.modal-header>button.close+h5.modal-title)+(div.modal-body)+(div.modal-footer>button.btn) -->
-    <div class="modal fade" id="myUye" role="dialog">
-        <div class="modal-dialog">
+    <div class="modal fade" id="myUye" role="dialog" style=" backdrop-filter: blur(10px);">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button class="close" data-dismiss="modal">&times;</button>
+                    <button class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Kapat"></button><!-- kapatma butonu -->
+
                     <h5 class="modal-title"></h5>
                 </div>
                 <div class="modal-body"></div>
@@ -436,7 +431,6 @@
                                     class="input-placeholder">E-posta adresinizi giriniz<span
                                         class="input-placeholder-required fw-bold text-danger">*</span></span></div>
                         </div>
-
                         <!--  -->
                         <div class="col-12"><!---->
                             <div class="w-100 popover-wrapper position-relative mb-1"><input type="text" placeholder=""
@@ -446,13 +440,11 @@
                                     class="input-placeholder">Şifrenizi giriniz<span
                                         class="input-placeholder-required fw-bold text-danger">*</span></span></div>
                         </div>
-
                         <div class="form-group mt-3 ml-3 ">
-                                <label for=""><input type="checkbox" class="form-checkbox" required>Beni hatırla</label>
-                                <a href="#" style="color:black; margin-left: 255px;"  id="btn_sifre">ŞİFREMİ UNUTTUM</a>
+                            <label for=""><input type="checkbox" class="form-checkbox" required>Beni hatırla</label>
+                            <a href="#" style="color:black; margin-left: 255px;" id="btn_sifre">ŞİFREMİ UNUTTUM</a>
                         </div>
-
-                        <!-- <div class="form-group "><label for=""><input type="checkbox" class="form-checkbox" required><a href="" style="color: black;"> Sözleşmeyi</a> okudum ve kabul ediyorum.</label> -->
+                        <!-- EMBET YAPISI: <div class="form-group "><label for=""><input type="checkbox" class="form-checkbox" required><a href="" style="color: black;"> Sözleşmeyi</a> okudum ve kabul ediyorum.</label> -->
                     </form>
                 </div>
                 <div class="modal-footer"><button class="btn btn-primary" style="width: 100%;"
@@ -462,11 +454,12 @@
     </div>
     <!-- uye modal end -->
     <!-- uye ol modal start -->
-    <div class="modal fade" id="myUyeol" role="dialog">
-        <div class="modal-dialog">
+    <div class="modal fade" id="myUyeol" role="dialog" style=" backdrop-filter: blur(10px);">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button class="close" data-dismiss="modal">&times;</button>
+                    <button class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Kapat"></button><!-- kapatma butonu -->
                     <h5 class="modal-title"></h5>
                 </div>
                 <div class="modal-body"></div>
@@ -499,7 +492,6 @@
                                     class="input-placeholder">E-posta adresinizi giriniz<span
                                         class="input-placeholder-required fw-bold text-danger">*</span></span></div>
                         </div>
-
                         <!--  -->
                         <div class="col-12"><!---->
                             <div class="w-100 popover-wrapper position-relative mb-1"><input type="text" placeholder=""
@@ -517,7 +509,6 @@
                                     class="input-placeholder">Şifrenizi Tekrar giriniz<span
                                         class="input-placeholder-required fw-bold text-danger">*</span></span></div>
                         </div>
-
                         <div class="form-group mt-3 ml-3"><label for=""><input type="checkbox" class="form-checkbox"
                                     required>
                                 Sözleşmeyi Okudum, Kabul ediyorum.</label></div>
@@ -532,11 +523,12 @@
     </div>
     <!-- uye ol modal end -->
     <!-- sifremi unuttum start -->
-     <div class="modal fade" id="mySifre" role="dialog">
-        <div class="modal-dialog">
+    <div class="modal fade" id="mySifre" role="dialog" style=" backdrop-filter: blur(10px);">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button class="close" data-dismiss="modal">&times;</button>
+                    <button class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Kapat"></button><!-- kapatma butonu -->
                     <h5 class="modal-title"></h5>
                 </div>
                 <div class="modal-body"></div>
@@ -553,9 +545,7 @@
                                     class="input-placeholder">E-posta adresinizi giriniz<span
                                         class="input-placeholder-required fw-bold text-danger">*</span></span></div>
                         </div>
-
                         <!--  -->
-
                         <!-- <div class="form-group "><label for=""><input type="checkbox" class="form-checkbox" required><a href="" style="color: black;"> Sözleşmeyi</a> okudum ve kabul ediyorum.</label> -->
                     </form>
                 </div>
@@ -564,20 +554,78 @@
             </div>
         </div>
     </div>
-
     <!-- sifremi unuttum end -->
+    <!-- sepet start -->
+    <div class="modal fade" id="sepet" role="dialog" style=" backdrop-filter: blur(10px);">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Kapat"></button><!-- kapatma butonu -->
+                </div>
+                <div class="modal-body"></div>
+                <!-- div.container>h3{Uye Grisi}+form>(div.form-group>label+input.form-control)*3 -->
+                <div class="container">
+                    <h3 style="text-align: center; margin-top: 0; ">SEPETİM</h3>
+                    <form action="">
+                        <!--  -->
+                        <div class="card mb-3 mt-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img style="width: 100%; height: 250px; object-fit: contain; " id="SefillerFotoiki" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title" id="SefillerAdi2"></h5>
+                                        <p  id="SefillerHakkindaA" class="card-text ellipsed"></p>
+                                        
+                                        
+                                    </div>
+                                    <label for="" class="ml-4" id="SefillerFiyat"></label>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                            <!--  -->
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="https://placehold.co/600x700" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">SEFİLER</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                            <i class="fa-bold fa-lg ">250 TL</i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
 
+                    </form>
+                </div>
+                <div class="modal-footer"><button class="btn btn-primary" style="width: 100%;"
+                        data-dismiss="modal">SATIN AL</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- sepet end -->
     <!-- JS -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-
     <link rel="node_modules/bootstrap/dist/css/bootstrap.css">
     </link>
     <script src="js/main.js"></script>
+    <script src="js/data.js"></script>
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -589,6 +637,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>

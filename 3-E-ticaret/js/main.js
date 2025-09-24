@@ -23,9 +23,31 @@ $(function(){
 $(function(){
             $("#btn_sifre").click(function(){
                 $("#mySifre").modal('show');
-                $("#myUyeol").modal('hide');
-                
-                
+                $("#myUyeol").modal('hide');                  
+            });
+        });
+$(function(){
+            $("#btn_sepet").click(function(){
+                $("#sepet").modal('show');
+                  
+            });
+        });
+$(function(){
+            $("#company").click(function(){
+                $("#companyModal").modal('show');
+                  
+            });
+        });
+$(function(){
+            $("#orderedTrash").click(function(){
+                $("#orderedTrashModal").modal('show');
+                  
+            });
+        });
+$(function(){
+            $("#orderedEdit").click(function(){
+                $("#orderedEditModal").modal('show');
+                  
             });
         });
         

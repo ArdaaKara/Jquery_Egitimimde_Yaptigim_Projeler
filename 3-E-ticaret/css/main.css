@@ -11,7 +11,6 @@ body {
     font-weight: weight;
     font-style: normal;  
 }
-
 html{
     font-size: 16px;
 
@@ -27,7 +26,6 @@ a{
   display: inline-block;
   text-decoration: none;
 }
-
 .gradient-link span {
   background: linear-gradient(to right, red, pink);
   background-clip: text;
@@ -45,7 +43,6 @@ a{
   display: inline-block;
   text-decoration: none;
 }
-
 .gradient-link-linkedn span {
   background: linear-gradient(to right, rgb(1, 64, 146), rgb(38, 35, 218));
   background-clip: text;
@@ -58,11 +55,10 @@ a{
   text-shadow: 0 0 5px rgba(31, 1, 165, 0.5); /* hafif parlama efekti */
 }
 /* link finish */
-/* */
+/* girisyap_text start */
 .popover-wrapper {
     position: relative;
 }
-
 .form-control {
     border: 2px solid #ccc; /* Kenar rengi */
     border-radius: 5px; /* Kenar yuvarlama */
@@ -70,7 +66,6 @@ a{
     padding: 10px; /* İç boşluk */
     transition: border-color 0.3s; /* Kenar rengi geçişi */
 }
-
 .input-placeholder {
     position: absolute;
     left: 10px; /* Sol boşluk */
@@ -79,11 +74,9 @@ a{
     transition: 0.2s ease all; /* Geçiş efekti */
     pointer-events: none; /* Tıklanamaz hale getirme */
 }
-
 .form-control:focus {
     border-color: rgb(0, 0, 0); /* Odaklandığında kenar rengi */
 }
-
 .form-control:focus + .input-placeholder,
 .form-control:not(:placeholder-shown) + .input-placeholder {
     top: -20px; /* Yukarı kaydırma */
@@ -91,10 +84,106 @@ a{
     font-size: 12px; /* Yazı boyutu */
     color: rgb(0, 0, 0); /* Yazı rengi */
 }
-
 .input-placeholder-required {
     margin-left: 2px; /* Zorunlu işareti için boşluk */
 }
-
-
+/* text finish */
+/* modal cizgi kaldirma */
+.modal-content,
+.modal-body,
+.modal-header,
+.modal-footer,
+.modal .card,
+.modal .border,
+.modal .border-start,
+.modal .border-end {
+  border: none !important;
+}
 /*  */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+/* Yazı Taşmasını Engelleme */
+.ellipsed {
+  white-space: nowrap;         /* Tek satırda tut */
+  overflow: hidden;            /* Taşanı gizle */
+  text-overflow: ellipsis;     /* ... koy */
+}
+.product-card img {
+  width: 100%;
+  height: 150px;               /* Yüksekliği sabitle */
+  object-fit: cover;           /* Taşan kısımları kırp */
+}
+
+/* FOOTER ALTTA KALMASINI SAĞLAMAK FİXED KULLANMADAN !*/
+/* Tüm sayfayı kapsayan yapı */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.sayfa {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* En az ekran yüksekliği kadar */
+}
+
+/* İçerik kısmı (footer'dan yukarıda kalacak alan) */
+main {
+  flex: 1; /* Sayfanın boş kalan kısmını kapla */
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+/*  */
+/*  */
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    padding: 15px 20px;
+    position: relative;
+}
+
+nav ul li:hover {
+    background-color: #444;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li {
+    padding: 10px;
+    border-bottom: 1px solid #555;
+}
+
+.dropdown-content li:hover {
+    background-color: #555;
+}

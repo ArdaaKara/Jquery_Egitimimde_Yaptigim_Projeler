@@ -32,7 +32,7 @@ nav {
 
 /* header */
 header .jumbotron {
-    background-image: url(/images/ap2.jpg);
+    background-image: url(ap2.jpg);
     background-size: cover;
     background-position: 25% 50%;
     padding-top: 12rem;
