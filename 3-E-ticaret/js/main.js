@@ -1,10 +1,10 @@
 $(function () {
     var autoComplete=[
-        "Html5",
-        "css3",
-        "js",
-        "Jquery",
-        "Arda"
+        "Roman",
+        "CSS",
+        "JavaScript",
+        "jQuery",
+        "Kişisel Gelişim"
     ];
     $("#tags").autocomplete({
         source:autoComplete
