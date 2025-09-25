@@ -4,6 +4,10 @@
     margin: 0;
     
 } */
+#tags{
+  width: 400px;
+
+}
 body {
     font-family: "Oswald", sans-serif;
     font-family: "Oswald", sans-serif;
@@ -22,7 +26,7 @@ a{
 /* link start */
 /* instagram******* */
 .gradient-link {
-  background-color: black; /* Mevcut arka plan örnek */
+  background-color: rgb(0, 0, 0); /* Mevcut arka plan örnek */
   display: inline-block;
   text-decoration: none;
 }
@@ -149,24 +153,19 @@ footer {
 }
 /*  */
 /*  */
-
-
 nav ul {
     list-style-type: none;
     padding: 0;
     display: flex;
     margin: 0;
 }
-
 nav ul li {
-    padding: 15px 20px;
+    /* padding: 15px 20px; */
     position: relative;
 }
-
 nav ul li:hover {
     background-color: #444;
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -174,16 +173,19 @@ nav ul li:hover {
     min-width: 200px;
     z-index: 1;
 }
-
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
 .dropdown-content li {
     padding: 10px;
     border-bottom: 1px solid #555;
 }
-
 .dropdown-content li:hover {
     background-color: #555;
+}
+/* back top button */
+#backTopButton{
+  position: fixed;
+  right:25px;
+  bottom:25px;
 }

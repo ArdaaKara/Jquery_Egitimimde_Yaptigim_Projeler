@@ -23,10 +23,10 @@
     <!-- cdn bitis -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
 </head>
 
-<body>
+<body class="">
     <header>
         <nav class="navbar navbar-expand-md navbar-dark bg-black fixed-top">
             <a class="navbar-brand" href="index.htm">Logo</a>
@@ -37,48 +37,45 @@
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
+                    <li class="nav-item ">
                         <a class="nav-link" href="index.htm">Anasayfa<span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item"><!--  -->
-                        <li class="dropdown">Kategoriler
-                <ul class="dropdown-content">
-                    <li>Yeni Çıkanlar</li>
-                    <li>Çok Satanlar</li>
-                    <li>Yazarlar</li>
-                    <li>Edebiyat</li>
-                    <li>Roman</li>
-                    <li>Kişisel Gelişim</li>
-                    <li>Çocuk ve Gençlik</li>
-                    <li>Araştırma - Tarih</li>
-                    <li>Yabancı Dilde Kitaplar</li>
-                    <li>Çizgi Roman ve Manga</li>
-                    <li>Felsefe Kitapları</li>
-                    <li>E-Kitaplar</li>
-                </ul>
-                        
-                    </li><!--  -->
+                    <li class="nav-item dropdown nav-link ">Kategoriler
+                        <ul class="dropdown-content nav-link">
+                            <li>Yeni Çıkanlar</li>
+                            <li>Çok Satanlar</li>
+                            <li>Yazarlar</li>
+                            <li>Edebiyat</li>
+                            <li>Roman</li>
+                            <li>Kişisel Gelişim</li>
+                            <li>Çocuk ve Gençlik</li>
+                            <li>Araştırma - Tarih</li>
+                            <li>Yabancı Dilde Kitaplar</li>
+                            <li>Çizgi Roman ve Manga</li>
+                            <li>Felsefe Kitapları</li>
+                            <li>E-Kitaplar</li>
+                        </ul>
+
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Yardım</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Diller</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#">EN</a>
-                            <a class="dropdown-item" href="#">GE</a>
-                            <a class="dropdown-item" href="#">TR</a>
-                        </div>
+                         <li class="nav-item dropdown nav-link ">Diller
+                        <ul class="dropdown-content nav-link">
+                            <li>EN</li>
+                            <li>TR</li>
+                            <li>GE</li>
+                        </ul>
                     </li>
                 </ul>
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
                     <li class="nav-item">
                         <form class="form-inline my-2 my-lg-0">
-                            <input id="#tags" class="form-control mr-sm-2 my-sm-0 " type="text" placeholder="Ara">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-                                <span class="fas fa-search">
-                                </span>
-                            </button>
+                            <input  class="form-control mr-sm-2 my-sm-0  " type="text" id="tags"
+                                placeholder="Aradığınız ürün, kategori veya markayı yazınız.">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><span
+                                    class="fas fa-search"></span></button>
                         </form>
                     </li>
                 </ul>
@@ -110,7 +107,7 @@
                             Bilgiler</a>
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
                             <a class="dropdown-item" href="ordered.htm">Siparişlerim</a>
-                            <a class="dropdown-item" href="#">Action 2</a>
+                            <a class="dropdown-item" href="books.htm">Kitaplar</a>
                             <!--  -->
                             <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="dropdownId"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span
@@ -180,12 +177,13 @@
                 <div class="col-md-3">
                     <div class="card">
                         <a href="#">
-                            <img style="width: 100%; height: 250px; object-fit: contain; " id="SefillerFoto" src="" class="card-img-top img-fluid" alt="">
+                            <img style="width: 100%; height: 250px; object-fit: contain; " id="kitapFoto" src=""
+                                class="card-img-top img-fluid" alt="">
                         </a>
                         <div class="card-body">
-                            <h4 id="SefillerAdi" class="card-title text-center"></h4>
-                            <p id="SefillerHakkinda" class="card-text ellipsed"></p>
-                            <a href="#" class="btn btn-primary"><span class="fas fa-shopping-basket"></span>Sepet</a>
+                            <h4 id="kitapAdi" class="card-title text-center"></h4>
+                            <p id="kitapHakkinda" class="card-text ellipsed"></p>
+                            <a href="" class="btn btn-primary"><span class="fas fa-shopping-basket"></span>Sepet</a>
                         </div>
                     </div>
                 </div>
@@ -195,7 +193,8 @@
                         <img class="card-img-top img-fluid" src="https://placehold.co/250x150" alt="resim yok">
                         <div class="card-body">
                             <h4 class="card-title text-center">Başlık</h4>
-                            <p class="card-text ellipsed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae,
+                            <p class="card-text ellipsed">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quae,
                                 eligendi?</p>
                             <a href="#" class="btn btn-primary"><span class="fas fa-shopping-basket"></span>Sepet</a>
                         </div>
@@ -373,9 +372,10 @@
             </div>
         </div>
     </main>
+    <a href="#" class="btn btn-primary" id="backTopButton"><span class="fas fa-arrow-up"></span></a>
     <!-- footer start -->
-    <footer class="fixed-bottom44"
-        style="background-color: rgb(0, 0, 0); color: white; text-align: center; height: 290px;">
+    <footer class="fixed-bottom44 bg-black"
+        style=" color: white; text-align: center; ">
         <div class="row44">
             <div class="row">
                 <div class="col-4" style="margin-top: 80px;"><!-- Sol taraf -->
@@ -572,21 +572,22 @@
                         <div class="card mb-3 mt-3" style="max-width: 540px;">
                             <div class="row g-0">
                                 <div class="col-md-4">
-                                    <img style="width: 100%; height: 250px; object-fit: contain; " id="SefillerFotoiki" class="img-fluid rounded-start" alt="...">
+                                    <img style="width: 100%; height: 250px; object-fit: contain; " id="kitapFoto2"
+                                        class="img-fluid rounded-start" alt="...">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
-                                        <h5 class="card-title" id="SefillerAdi2"></h5>
-                                        <p  id="SefillerHakkindaA" class="card-text ellipsed"></p>
-                                        
-                                        
+                                        <h5 class="card-title" id="kitapAdi2"></h5>
+                                        <p id="kitapHakkinda2" class="card-text ellipsed"></p>
+
+
                                     </div>
-                                    <label for="" class="ml-4" id="SefillerFiyat"></label>
-                                    
+                                    <label for="" class="ml-4" id="kitapFiyat"></label>
+
                                 </div>
-                                
+
                             </div>
-                            
+
                             <!--  -->
                             <div class="row g-0">
                                 <div class="col-md-4">
@@ -614,6 +615,7 @@
     </div>
 
     <!-- sepet end -->
+    
     <!-- JS -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -622,15 +624,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="node_modules/bootstrap/dist/css/bootstrap.css">
     </link>
-    <script src="js/main.js"></script>
-    <script src="js/data.js"></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/data.js" defer></script>
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>

@@ -41,23 +41,23 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="index.htm">Anasayfa<span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item dropdown nav-link " >Kategoriler
-                        <ul class="dropdown-content nav-link">
-                            <li>Yeni Çıkanlar</li>
-                            <li>Çok Satanlar</li>
-                            <li>Yazarlar</li>
-                            <li>Edebiyat</li>
-                            <li>Roman</li>
-                            <li>Kişisel Gelişim</li>
-                            <li>Çocuk ve Gençlik</li>
-                            <li>Araştırma - Tarih</li>
-                            <li>Yabancı Dilde Kitaplar</li>
-                            <li>Çizgi Roman ve Manga</li>
-                            <li>Felsefe Kitapları</li>
-                            <li>E-Kitaplar</li>
-                        </ul>
+                        <li class="nav-item dropdown nav-link ">Kategoriler
+                            <ul class="dropdown-content nav-link">
+                                <li>Yeni Çıkanlar</li>
+                                <li>Çok Satanlar</li>
+                                <li>Yazarlar</li>
+                                <li>Edebiyat</li>
+                                <li>Roman</li>
+                                <li>Kişisel Gelişim</li>
+                                <li>Çocuk ve Gençlik</li>
+                                <li>Araştırma - Tarih</li>
+                                <li>Yabancı Dilde Kitaplar</li>
+                                <li>Çizgi Roman ve Manga</li>
+                                <li>Felsefe Kitapları</li>
+                                <li>E-Kitaplar</li>
+                            </ul>
 
-                    </li>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Yardım</a>
                         </li>
@@ -111,7 +111,7 @@
                                 Bilgiler</a>
                             <div class="dropdown-menu" aria-labelledby="dropdownId">
                                 <a class="dropdown-item" href="#">Action 1</a>
-                                <a class="dropdown-item" href="books.htm">Action 2</a>
+                                <a class="dropdown-item" href="#">Action 2</a>
                                 <!--  -->
                                 <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="dropdownId"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span
@@ -138,7 +138,7 @@
                 <!-- div.container>div.row>div.col-md-12 -->
                 <div class="container">
                     <div class="row">
-                        <h1 style="text-align: center;">SİPARİŞLER</h1>
+                        <h1 style="text-align: center;">KİTAPLAR</h1>
                         <div class="col-md-12">
                             <!-- div.table.table-sm.table-striped.table.hover.text-center.table-dark>caption{siparisler}+thead>tr>th*6+tbody>tr>td*6+tfoot>tr>td*2 -->
                             <table class="table table-sm table-striped table hover text-center table-dark">
@@ -147,32 +147,51 @@
                                 </caption>
                                 <thead>
                                     <tr>
-                                        <th>Sipariş Ad</th>
-                                        <th>Sipariş Durumu</th>
-                                        <th>Sipariş Firma</th>
-                                        <th>Sipariş Tarih</th>
-                                        <th>Sipariş Kodu</th>
-                                        <th>Ürün Fiyat</th>
+                                        <th>Fotoğraf</th>
+                                        <th>Adı</th>
+                                        <th>Orjinal Adı</th>
+                                        <th>Hakkinda</th>
+                                        <th>Yazarı</th>
+                                        <th>Cevirmeni</th>
+                                        <th>Yayinevi</th>
+                                        <th>Yıl</th>
+                                        <th>Sayfa Sayisi</th>
+                                        <th>Fiyat</th>
                                         <th>#</th>
+
 
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>
+                                            <img style="width: 50px; height: 50px; object-fit: contain;" id="kitapFoto"
+                                                alt="Kitap Görseli">
+                                        </td>
+
+                                        <td>
                                             <p id="kitapAdi"></p>
                                         </td>
                                         <td>
-                                            <p id="SiparisDurum"></p>
+                                            <label for="" id="orjinalAdi"></label></p>
                                         </td>
                                         <td>
-                                            <label for="" id="kitapYayinevi"></label></p>
+                                            <p id="kitapHakkinda"></p>
                                         </td>
                                         <td>
-                                            <p id="SiparisTarih"></p>
+                                            <p id="kitapYazar"></p>
                                         </td>
                                         <td>
-                                            <p id="SiparisİD"></p>
+                                            <p id="kitapCevirmen"></p>
+                                        </td>
+                                        <td>
+                                            <p id="kitapYayinevi"></p>
+                                        </td>
+                                        <td>
+                                            <p id="kitapYil"></p>
+                                        </td>
+                                        <td>
+                                            <p id="kitapSayfa"></p>
                                         </td>
                                         <td>
                                             <p id="kitapFiyat"></p>
@@ -180,8 +199,6 @@
                                         <td>
                                             <button class="btn btn-info" id="company"><span
                                                     class="fa fa-building"></span></button>
-                                            <button class="btn btn-danger" id="orderedTrash"><span
-                                                    class="fa fa-trash"></span></button>
                                         </td>
 
                                     </tr>
