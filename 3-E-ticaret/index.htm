@@ -28,7 +28,7 @@
 
 <body class="">
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-black fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark bg-black  fixed-top">
             <a class="navbar-brand" href="index.htm">Logo</a>
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
                 data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
@@ -38,22 +38,17 @@
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item ">
-                        <a class="nav-link" href="index.htm">Anasayfa<span class="sr-only">(current)</span></a>
+                        <a class="nav-link active" href="index.htm">Anasayfa<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown nav-link ">Kategoriler
                         <ul class="dropdown-content nav-link">
-                            <li>Yeni Çıkanlar</li>
-                            <li>Çok Satanlar</li>
-                            <li>Yazarlar</li>
                             <li>Edebiyat</li>
                             <li>Roman</li>
                             <li>Kişisel Gelişim</li>
                             <li>Çocuk ve Gençlik</li>
                             <li>Araştırma - Tarih</li>
                             <li>Yabancı Dilde Kitaplar</li>
-                            <li>Çizgi Roman ve Manga</li>
                             <li>Felsefe Kitapları</li>
-                            <li>E-Kitaplar</li>
                         </ul>
 
                     </li>
@@ -61,7 +56,7 @@
                         <a class="nav-link" href="#">Yardım</a>
                     </li>
                     <li class="nav-item dropdown">
-                         <li class="nav-item dropdown nav-link ">Diller
+                    <li class="nav-item dropdown nav-link ">Diller
                         <ul class="dropdown-content nav-link">
                             <li>EN</li>
                             <li>TR</li>
@@ -69,12 +64,12 @@
                         </ul>
                     </li>
                 </ul>
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 search_container  ">
                     <li class="nav-item">
-                        <form class="form-inline my-2 my-lg-0">
-                            <input  class="form-control mr-sm-2 my-sm-0  " type="text" id="tags"
+                        <form class="form-inline my-2 my-lg-0 ">
+                            <input class="form-control mr-sm-2 my-sm-0  " type="text" id="tags"
                                 placeholder="Aradığınız ürün, kategori veya markayı yazınız.">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><span
+                            <button class="btn btn-outline-success my-2 my-sm-0 " id="search_button" type="submit"><span
                                     class="fas fa-search"></span></button>
                         </form>
                     </li>
@@ -82,7 +77,8 @@
                 <ul class="navbar-nav navbar-right mr-5">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false"><span class="fas fa-user"></span></a>
+                            aria-haspopup="true" aria-expanded="false"><span id="nav_icon1"
+                                class="fas fa-user"></span></a>
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
                             <a class="dropdown-item" href="#" id="btn_giris">Giriş yap</a>
                             <a class="dropdown-item" href="#" id="btn_kayit">Kayıt ol</a>
@@ -93,43 +89,34 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false"><span class="fas fa-shopping-basket"></span><span
-                                class="badge badge-percent">(2)</span></a>
+                            aria-haspopup="true" aria-expanded="false"><span id="nav_icon2"
+                                class="fas fa-shopping-basket"></span><span class="badge badge-percent">(2)</span></a>
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item btn btn-primary" href="#" id="btn_sepet">Sepet</a>
-                            <a class="dropdown-item btn btn-primary" href="ordered.htm" id="">Siparislerim</a>
+                            <a class="dropdown-item" href="#" id="btn_sepet">Sepet</a>
+                            <a class="dropdown-item" href="ordered.htm" id="">Siparislerim</a>
                         </div>
                     </li>
                     <!-- <div style="display: none;"> -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false"><span class="fas fa-info-circle"></span>
+                            aria-haspopup="true" aria-expanded="false"><span id="nav_icon3"
+                                class="fas fa-info-circle"></span>
                             Bilgiler</a>
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
                             <a class="dropdown-item" href="ordered.htm">Siparişlerim</a>
                             <a class="dropdown-item" href="books.htm">Kitaplar</a>
-                            <!--  -->
-                            <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="dropdownId"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span
-                                    class="fas fa-envelope"></span> Mesaj<span
-                                    class="badge badge-percent">(2)</span></a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                <a class="dropdown-item" href="#">Action 1</a>
-                                <a class="dropdown-item" href="#">Action 2</a>
-                            </div>
                         </div>
                     </li>
                 </ul>
-                <!-- </div> -->
             </div>
         </nav>
     </header>
     <main>
         <!-- div class="container44">
         <div class="row44"> -->
-        <div class="container-fluid">
+        <div class="">
             <div class="row">
-                <div id="carouselId" class="carousel slide" data-ride="carousel">
+                <div style="margin-top: 50px;" id="carouselId" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselId" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselId" data-slide-to="1"></li>
@@ -137,46 +124,60 @@
                     </ol>
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
-                            <img src="https://placehold.co/1400x500" width="100%"
-                                data-src="holder.js/900x500/auto/#777:#555/text:First slide" alt="First slide">
-                            <div class="carousel-caption d-none d-md-block " style="color: black;">
-                                <h5>Third slide label</h5>
-                                <p>Some representative placeholder content for the third slide.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://placehold.co/1400x500" width="100%"
-                                data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide">
-                            <div class="carousel-caption d-none d-md-block " style="color: black;">
-                                <h5>Third slide label</h5>
-                                <p>Some representative placeholder content for the third slide.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img style="margin-top: 25px; width: 1900px; height: 650px; object-fit: contain;background-color: lightgrey; " id="ZSK_Foto2" src="https://placehold.co/1400x500" width="100%"
+                            <img style="padding-right: 400px; padding-top: 50px; padding-bottom: 50px;  height: 675px; object-fit: contain;"
+                                id="Nutuk_Foto2" src="" width="100%"
                                 data-src="holder.js/900x500/auto/#666:#444/text:Third slide" alt="Third slide">
-                            <div class="carousel-caption d-none d-md-block text-left " style="color: rgb(0, 0, 0); margin-bottom: 200px; font-size: large; margin-left: 0;">
-                                <h1 >Zafer Sızlanarak Kazanılmaz</h1>
-                                <p>En son ne zaman yeni bir şeye karar verdin?<br>
-Birilerinin fikirleri neden bu kadar etkiliyor seni?<br>
-Neden onların cetveli ile ölçüyorsun, her doğrunu, her umudunu, her hayalini?<br>
-Başkalarının yıllardır zehirlediği senden kurtulmak lazım.
-Yumurtadan çıkman lazım.</p>
+                            <div class="carousel-caption d-none d-md-block  "
+                                style="color: rgb(0, 0, 0);  font-size: large; text-align: left; margin-bottom: 200px; margin-left: 850px;  ">
+                                <h1 id="Nutuk_Adi2"></h1>
+                                <p style="text-shadow: 8px;">Kurtuluş Savaşı'nın önderi, Türkiye Cumhuriyeti'nin
+                                    kurucusu Gazi Mustafa Kemal Atatürk'ün kaleme aldığı Nutuk, 19 Mayıs 1919'da,
+                                    Mustafa Kemal Bandırma vapuru ile Samsun'a çıktığında ülkenin genel durumunu
+                                    değerlendirmesiyle başlıyor. Türkiye Cumhuriyeti'nin küllerinden yeniden doğuş
+                                    hikâyesini merak eden genç yaşlı herkese hitap eden kitap, araştırma-tarih türünde
+                                    yayımlanıyor.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img style="padding-right: 400px; padding-top: 50px; padding-bottom: 50px;  height: 675px; object-fit: contain;"
+                                id="ZSK_Foto2" src="" width="100%"
+                                data-src="holder.js/900x500/auto/#666:#444/text:Third slide" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block  "
+                                style="color: rgb(0, 0, 0);  font-size: large; text-align: left; margin-bottom: 200px; margin-left: 850px;  ">
+                                <h1 id="ZSK_Adi2"></h1>
+                                <p style="text-shadow: 8px;">En son ne zaman yeni bir şeye karar verdin?<br>
+                                    Birilerinin fikirleri neden bu kadar etkiliyor seni?<br>
+                                    Neden onların cetveli ile ölçüyorsun, her doğrunu, her umudunu,her hayalini?<br>
+                                    Başkalarının yıllardır zehirlediği senden kurtulmak lazım. <br>
+                                    Yumurtadan çıkman lazım.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img style="padding-right: 400px; padding-top: 50px; padding-bottom: 50px;  height: 675px; object-fit: contain;"
+                                id="HP_Foto2" src="" width="100%"
+                                data-src="holder.js/900x500/auto/#666:#444/text:Third slide" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block  "
+                                style="color: rgb(0, 0, 0);  font-size: large; text-align: left; margin-bottom: 200px; margin-left: 850px;  ">
+                                <h1 id="HP_Adi2"></h1>
+                                <p style="text-shadow: 8px;" id="HP_Hakkinda2"></p>
                             </div>
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
                 </div>
+                <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-            <p class=" text-center display-4 font-weight-bold mt-3 mb-2" style="font-size: 2rem; color: black; ">ÜRÜNLER
-            </p>
+        </div>
+        <p class=" text-center display-4 font-weight-bold mt-3 mb-2" style="font-size: 2rem; color: black; ">ÜRÜNLER
+        </p>
+        <!-- <div class="container"> -->
             <div class="row">
                 <div class="col-md-3">
                     <div class="card">
@@ -195,9 +196,10 @@ Yumurtadan çıkman lazım.</p>
                 <div class="col-md-3">
                     <div class="card">
                         <a href="">
-                            <img style="width: 100%; height: 250px; object-fit: contain; "  class="card-img-top img-fluid" id="Nutuk_Foto1" src="" alt="resim yok">
+                            <img style="width: 100%; height: 250px; object-fit: contain; "
+                                class="card-img-top img-fluid" id="Nutuk_Foto1" src="" alt="resim yok">
                         </a>
-                        
+
                         <div class="card-body">
                             <h4 id="Nutuk_Adi1" class="card-title text-center"></h4>
                             <p id="Nutuk_Hakkinda1" class="card-text ellipsed">?</p>
@@ -209,7 +211,8 @@ Yumurtadan çıkman lazım.</p>
                 <div class="col-md-3">
                     <div class="card">
                         <a href="">
-                        <img style="width: 100%; height: 250px; object-fit: contain; " class="card-img-top img-fluid"  id="TE_Foto1" src="" alt="resim yok">
+                            <img style="width: 100%; height: 250px; object-fit: contain; "
+                                class="card-img-top img-fluid" id="TE_Foto1" src="" alt="resim yok">
                         </a>
                         <div class="card-body">
                             <h4 id="TE_Adi1" class="card-title text-center"></h4>
@@ -223,7 +226,8 @@ Yumurtadan çıkman lazım.</p>
                     <div class="card">
                         <a href="">
 
-                        <img style="width: 100%; height: 250px; object-fit: contain; " class="card-img-top img-fluid" id="HP_Foto1" src="" alt="resim yok">
+                            <img style="width: 100%; height: 250px; object-fit: contain; "
+                                class="card-img-top img-fluid" id="HP_Foto1" src="" alt="resim yok">
                         </a>
                         <div class="card-body">
                             <h4 id="HP_Adi1" class="card-title text-center"></h4>
@@ -237,7 +241,8 @@ Yumurtadan çıkman lazım.</p>
                     <div class="card">
                         <a href="">
 
-                        <img style="width: 100%; height: 250px; object-fit: contain; background-color: rgb(241, 240, 240);" id="KendimceDüsünceler_Foto1" class="card-img-top img-fluid" src="" alt="resim yok">
+                            <img style="width: 100%; height: 250px; object-fit: contain; background-color: rgb(241, 240, 240);"
+                                id="KendimceDüsünceler_Foto1" class="card-img-top img-fluid" src="" alt="resim yok">
                         </a>
                         <div class="card-body">
                             <h4 id="KendimceDüsünceler_Adi1" class="card-title text-center"></h4>
@@ -250,7 +255,8 @@ Yumurtadan çıkman lazım.</p>
                 <div class="col-md-3 mt-4 mb-4">
                     <div class="card">
                         <a href="">
-                        <img style="width: 100%; height: 250px; object-fit: contain;" id="HPC_Foto1" class="card-img-top img-fluid" src="" alt="resim yok">
+                            <img style="width: 100%; height: 250px; object-fit: contain;" id="HPC_Foto1"
+                                class="card-img-top img-fluid" src="" alt="resim yok">
 
                         </a>
                         <div class="card-body">
@@ -265,7 +271,8 @@ Yumurtadan çıkman lazım.</p>
                     <div class="card">
                         <a href="">
 
-                        <img style="width: 100%; height: 250px; object-fit: contain;" class="card-img-top img-fluid" id="Simyaci_Foto1" src="" alt="resim yok">
+                            <img style="width: 100%; height: 250px; object-fit: contain;" class="card-img-top img-fluid"
+                                id="Simyaci_Foto1" src="" alt="resim yok">
                         </a>
                         <div class="card-body">
                             <h4 id="Simyaci_Adi1" class="card-title text-center"></h4>
@@ -278,7 +285,8 @@ Yumurtadan çıkman lazım.</p>
                 <div class="col-md-3 mt-4 mb-4">
                     <div class="card">
                         <a href="">
-                        <img style="width: 100%; height: 250px; object-fit: contain;" class="card-img-top img-fluid" id="ZSK_Foto1" src="" alt="resim yok">
+                            <img style="width: 100%; height: 250px; object-fit: contain;" class="card-img-top img-fluid"
+                                id="ZSK_Foto1" src="" alt="resim yok">
                         </a>
                         <div class="card-body">
                             <h4 id="ZSK_Adi1" class="card-title text-center"></h4>
@@ -341,64 +349,128 @@ Yumurtadan çıkman lazım.</p>
                 </div>
             </div>
         </div>
-        <div class="accordion accordion-flush " id="accordionFlushExample" s>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        Accordion Item #1
-                    </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                        the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+        <!-- </div> -->
+        <br>
+        <br>
+        <br>
+
+
+        <!-- Bilgi Kutusu -->
+        <p class=" text-center display-4 font-weight-bold mt-3 mb-4" style="font-size: 2rem; color: black; ">
+            -BİLGİ-</p>
+        <div class="card mb-3" style="max-width: 1500px; height: 320px; margin-left: 225px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="content/picture/book1.png" class="img-fluid rounded-start" alt="...">
                 </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        Accordion Item #2
-                    </button>
-                </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                        the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine
-                        this being filled with some actual content.</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        Accordion Item #3
-                    </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                        the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
-                        exciting happening here in terms of content, but just filling up the space to make it look, at
-                        least at first glance, a bit more representative of how this would look in a real-world
-                        application.</div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Çok Kitap Okuyan İnsanların Bilimsel Olarak Kanıtlanmış
+                            Avantajları</h3>
+                        <p style=" line-height: 1.6; text-shadow: 1px 1px 2px rgba(0,0,0,0.2); padding: 15px; border: 1px solid #ccc; border-radius: 8px;"
+                            class="card-text text-center">Yapılan bilimsel araştırmalar, düzenli olarak kitap okuyan
+                            bireylerin bilişsel yeteneklerinin, kelime dağarcıklarının ve empati kurma becerilerinin
+                            anlamlı şekilde geliştiğini göstermektedir. Özellikle kurgu türündeki kitapları okuyan
+                            kişiler, farklı karakterlerin bakış açılarına daha fazla maruz kaldıkları için daha yüksek
+                            duygusal zeka seviyelerine ulaşabilmektedir. 2013 yılında Science dergisinde yayımlanan bir
+                            çalışmaya göre, edebi kurgu okuyan bireylerde "zihin kuramı" (başkalarının ne düşündüğünü
+                            anlayabilme yetisi) daha gelişmiştir. <br><br> Ayrıca kitap okuma alışkanlığı, uzun vadede
+                            akademik ve mesleki başarıyla da doğrudan ilişkilidir. OECD'nin yaptığı geniş çaplı bir
+                            araştırmaya göre, çocukluk döneminde kitaplarla çevrili bir ortamda büyüyen bireylerin
+                            üniversiteye gitme ihtimali, kitap bulunmayan evlerde büyüyenlere göre %60 daha fazladır.
+                            Yetişkinlikte ise kitap okuma, problem çözme ve analitik düşünme becerilerini artırarak daha
+                            başarılı kararlar alınmasına katkı sağlar. </p>
+                    </div>
                 </div>
             </div>
         </div>
+        <br>
+        <!--  -->
+        <div class="card mb-3" style="max-width: 1500px; height: 300px; margin-left: 225px;">
+            <div class="row g-0">
+
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Günde Kaç Sayfa Kitap Okumak Beyin Sağlığını Etkiler?</h3>
+                        <p style=" line-height: 1.6; text-shadow: 1px 1px 2px rgba(0,0,0,0.2); padding: 15px; border: 1px solid #ccc; border-radius: 8px;"
+                            class="card-text text-center">Hiç düşündünüz mü, sadece günde 20 sayfa kitap okumanın yıllık
+                            ortalama 30 kitaba denk geldiğini? Üstelik bu küçük alışkanlık, bilimsel olarak beyin
+                            sağlığını güçlendirmekle kalmıyor, aynı zamanda stres seviyesini de önemli ölçüde azaltıyor.
+                            Sussex Üniversitesi’nin araştırmalarına göre, yalnızca 6 dakika kitap okumak bile stresi %68
+                            oranında azaltabiliyor. Peki sizce son zamanlarda zihinsel yorgunluğunuzun nedeni, telefon
+                            ekranlarına fazlaca bakmak olabilir mi? <br><br>Kitap okuyan bireylerin kelime dağarcığı,
+                            odaklanma süresi ve empati kurma becerileri, okumayanlara göre çok daha yüksek. Peki hiç
+                            düşündünüz mü, en son sizi bir kitap hangi dünyaya götürdü? Belki de yeni bir karakterin
+                            gözünden bakmak, günlük hayatınızdaki sorunlara bile farklı yaklaşmanıza yardımcı olabilir.
+                            Şimdi kendi hikâyenizi seçme zamanı olabilir — ilk adımı hangi kitapla atacaksınız? </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img style="width: 340px; height: auto;" src="content/picture/book4.png"
+                        class="img-fluid rounded-start" alt="...">
+                </div>
+            </div>
+        </div>
+        <br>
+        <!--  -->
+        <div class="card mb-3" style="max-width: 1500px; height: 300px; margin-left: 225px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img style="width: 340px; height: 300px;" src="content/picture/book3.png"
+                        class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Neden Fiziksel Kitap Hâlâ Dijitalden Güçlü?</h3>
+                        <p style=" line-height: 1.6; text-shadow: 1px 1px 2px rgba(0,0,0,0.2); padding: 15px; border: 1px solid #ccc; border-radius: 8px;"
+                            class="card-text text-center">Ekranlar ne kadar gelişirse gelişsin, fiziksel kitapların
+                            dokusunu, kokusunu ve sayfa çevirmenin verdiği hissi tam olarak taklit edemiyor.
+                            Araştırmalar, basılı kitap okuyan kişilerin, dijital okuyuculara kıyasla metni daha iyi
+                            anladığını ve hatırladığını ortaya koyuyor. Üstelik fiziksel kitaplar, zihinsel yorgunluğu
+                            azaltırken, ekranların aksine gözleri yormuyor. Belki de bu yüzden insanlar, dijital çağda
+                            bile kitaplıklarını gerçek sayfalarla doldurmaya devam ediyor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!--  -->
+        <div class="card mb-3" style="max-width: 1500px; height: 300px; margin-left: 225px;">
+            <div class="row g-0">
+
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Kitap Okumak Zihni Nasıl Yeniden Şekillendirir?</h3>
+                        <p style=" line-height: 1.6; text-shadow: 1px 1px 2px rgba(0,0,0,0.2); padding: 15px; border: 1px solid #ccc; border-radius: 8px;"
+                            class="card-text text-center">Nörobilim araştırmalarına göre kitap okurken beynimiz,
+                            yalnızca dil merkezlerini değil aynı zamanda hayal gücü, hafıza ve duygusal işlemleme
+                            alanlarını da aynı anda aktive ediyor. Özellikle kurgu kitapları, beynin empatiyle ilişkili
+                            bölgelerinde yoğun bir etkileşim oluşturuyor; bu da okurları daha anlayışlı ve duygusal
+                            açıdan daha güçlü bireyler hâline getiriyor. Yani her kitap, zihnimizde sadece bilgi değil,
+                            yeni sinirsel bağlantılar da inşa ediyor. Bu yüzden düzenli okuma, adeta beynin spor
+                            salonuna gitmesi gibidir.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img style="width: 340px; height: 300px; " src="content/picture/book2.png"
+                        class="img-fluid rounded-start" alt="...">
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- Bilgi Kutusu son -->
     </main>
     <a href="#" class="btn btn-primary" id="backTopButton"><span class="fas fa-arrow-up"></span></a>
     <!-- footer start -->
-    <footer class="fixed-bottom44 bg-black"
-        style=" color: white; text-align: center; ">
+    <footer class="fixed-bottom44 bg-black" style=" color: white; text-align: center; ">
         <div class="row44">
             <div class="row">
                 <div class="col-4" style="margin-top: 80px;"><!-- Sol taraf -->
                     <h3>Bağlantılar</h3>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#">Anasayfa</a></li>
-                        <li class="mb-2"><a href="#">Docs</a></li>
-                        <li class="mb-2"><a href="#">Examples</a></li>
+                        <li class="mb-2"><a href="index.htm">Anasayfa</a></li>
+                        <li class="mb-2"><a href="#">Yardım</a></li>
+                        <li class="mb-2"><a href="#">Profilim</a></li>
                     </ul>
                 </div>
                 <div class="col-4" style="margin-top: 50px;"><!-- Orta taraf -->
@@ -630,7 +702,7 @@ Yumurtadan çıkman lazım.</p>
     </div>
 
     <!-- sepet end -->
-    
+
     <!-- JS -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -645,15 +717,15 @@ Yumurtadan çıkman lazım.</p>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
- <!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<!-- jQuery UI CSS -->
-<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 
-<!-- jQuery UI JS -->
-<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <!-- jQuery UI JS -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"

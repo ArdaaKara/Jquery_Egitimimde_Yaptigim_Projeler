@@ -29,104 +29,88 @@
 <body>
     <div class="sayfa">
         <header>
-            <nav class="navbar navbar-expand-md navbar-dark bg-black fixed-top">
-                <a class="navbar-brand" href="index.htm">Logo</a>
-                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
-                    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.htm">Anasayfa<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item dropdown nav-link " >Kategoriler
+        <nav class="navbar navbar-expand-md navbar-dark bg-black  fixed-top">
+            <a class="navbar-brand" href="index.htm">Logo</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="index.htm">Anasayfa<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown nav-link ">Kategoriler
                         <ul class="dropdown-content nav-link">
-                            <li>Yeni Çıkanlar</li>
-                            <li>Çok Satanlar</li>
-                            <li>Yazarlar</li>
                             <li>Edebiyat</li>
                             <li>Roman</li>
                             <li>Kişisel Gelişim</li>
                             <li>Çocuk ve Gençlik</li>
                             <li>Araştırma - Tarih</li>
                             <li>Yabancı Dilde Kitaplar</li>
-                            <li>Çizgi Roman ve Manga</li>
                             <li>Felsefe Kitapları</li>
-                            <li>E-Kitaplar</li>
                         </ul>
 
                     </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Yardım</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">Diller</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                <a class="dropdown-item" href="#">EN</a>
-                                <a class="dropdown-item" href="#">GE</a>
-                                <a class="dropdown-item" href="#">TR</a>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
-                        <li class="nav-item">
-                            <form class="form-inline my-2 my-lg-0">
-                                <input id="tags" class="form-control mr-sm-2 my-sm-0 " type="text" placeholder="Ara">
-                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-                                    <span class="fas fa-search">
-                                    </span>
-                                </button>
-                            </form>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav navbar-right mr-5">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false"><span class="fas fa-user"></span></a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                <a class="dropdown-item" href="#" id="btn_giris">Giriş yap</a>
-                                <a class="dropdown-item" href="#" id="btn_kayit">Kayıt ol</a>
-                                <a class="dropdown-item" href="#" id=""><span
-                                        class="fas fa-user-astronaut"></span>Profilim</a>
-                                <a class="dropdown-item" href="#"><span class="fas fa-door-open"></span> Çıkış </a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false"><span
-                                    class="fas fa-shopping-basket"></span><span
-                                    class="badge badge-percent">(2)</span></a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                <a class="dropdown-item btn btn-primary" href="#" id="btn_sepet">Sepet</a>
-                                <a class="dropdown-item btn btn-primary" href="ordered.htm" id="">Siparislerim</a>
-                            </div>
-                        </li>
-                        <!-- <div style="display: none;"> -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false"><span class="fas fa-info-circle"></span>
-                                Bilgiler</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                <a class="dropdown-item" href="#">Action 1</a>
-                                <a class="dropdown-item" href="books.htm">Action 2</a>
-                                <!--  -->
-                                <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="dropdownId"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span
-                                        class="fas fa-envelope"></span> Mesaj<span
-                                        class="badge badge-percent">(2)</span></a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                    <a class="dropdown-item" href="#">Action 1</a>
-                                    <a class="dropdown-item" href="#">Action 2</a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <!-- </div> -->
-                </div>
-            </nav>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Yardım</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown nav-link ">Diller
+                        <ul class="dropdown-content nav-link">
+                            <li>EN</li>
+                            <li>TR</li>
+                            <li>GE</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 search_container  ">
+                    <li class="nav-item">
+                        <form class="form-inline my-2 my-lg-0 ">
+                            <input class="form-control mr-sm-2 my-sm-0  " type="text" id="tags"
+                                placeholder="Aradığınız ürün, kategori veya markayı yazınız.">
+                            <button class="btn btn-outline-success my-2 my-sm-0 " id="search_button" type="submit"><span
+                                    class="fas fa-search"></span></button>
+                        </form>
+                    </li>
+                </ul>
+                <ul class="navbar-nav navbar-right mr-5">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"><span id="nav_icon1"
+                                class="fas fa-user"></span></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#" id="btn_giris">Giriş yap</a>
+                            <a class="dropdown-item" href="#" id="btn_kayit">Kayıt ol</a>
+                            <a class="dropdown-item" href="#" id=""><span
+                                    class="fas fa-user-astronaut"></span>Profilim</a>
+                            <a class="dropdown-item" href="#"><span class="fas fa-door-open"></span> Çıkış </a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"><span id="nav_icon2"
+                                class="fas fa-shopping-basket"></span><span class="badge badge-percent">(2)</span></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#" id="btn_sepet">Sepet</a>
+                            <a class="dropdown-item" href="ordered.htm" id="">Siparislerim</a>
+                        </div>
+                    </li>
+                    <!-- <div style="display: none;"> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"><span id="nav_icon3"
+                                class="fas fa-info-circle"></span>
+                            Bilgiler</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="ordered.htm">Siparişlerim</a>
+                            <a class="dropdown-item" href="books.htm">Kitaplar</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         </header>
         <main>
             <ol class="breadcrumb">
