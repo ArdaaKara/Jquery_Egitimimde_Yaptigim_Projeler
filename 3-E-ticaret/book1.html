@@ -29,192 +29,73 @@
 <body>
     <div class="sayfa">
         <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-black  fixed-top">
-            <a class="navbar-brand" href="index.htm">Logo</a>
-            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
-                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item ">
-                        <a class="nav-link active" href="index.htm">Anasayfa<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item dropdown nav-link ">Kategoriler
-                        <ul class="dropdown-content nav-link">
-                            <li>Edebiyat</li>
-                            <li>Roman</li>
-                            <li>Kişisel Gelişim</li>
-                            <li>Çocuk ve Gençlik</li>
-                            <li>Araştırma - Tarih</li>
-                            <li>Yabancı Dilde Kitaplar</li>
-                            <li>Felsefe Kitapları</li>
-                        </ul>
-
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Yardım</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                    <li class="nav-item dropdown nav-link ">Diller
-                        <ul class="dropdown-content nav-link">
-                            <li>EN</li>
-                            <li>TR</li>
-                            <li>GE</li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 search_container  ">
-                    <li class="nav-item">
-                        <form class="form-inline my-2 my-lg-0 ">
-                            <input class="form-control mr-sm-2 my-sm-0  " type="text" id="tags"
-                                placeholder="Aradığınız ürün, kategori veya markayı yazınız.">
-                            <button class="btn btn-outline-success my-2 my-sm-0 " id="search_button" type="submit"><span
-                                    class="fas fa-search"></span></button>
-                        </form>
-                    </li>
-                </ul>
-                <ul class="navbar-nav navbar-right mr-5">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false"><span id="nav_icon1"
-                                class="fas fa-user"></span></a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#" id="btn_giris">Giriş yap</a>
-                            <a class="dropdown-item" href="#" id="btn_kayit">Kayıt ol</a>
-                            <a class="dropdown-item" href="#" id=""><span
-                                    class="fas fa-user-astronaut"></span>Profilim</a>
-                            <a class="dropdown-item" href="#"><span class="fas fa-door-open"></span> Çıkış </a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false"><span id="nav_icon2"
-                                class="fas fa-shopping-basket"></span><span class="badge badge-percent">(2)</span></a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#" id="btn_sepet">Sepet</a>
-                            <a class="dropdown-item" href="ordered.htm" id="">Siparislerim</a>
-                        </div>
-                    </li>
-                    <!-- <div style="display: none;"> -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false"><span id="nav_icon3"
-                                class="fas fa-info-circle"></span>
-                            Bilgiler</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="ordered.htm">Siparişlerim</a>
-                            <a class="dropdown-item" href="books.htm">Kitaplar</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+<div id="navbar-container"></div>
         </header>
         <main>
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">asda</a></li>
-                <li class="breadcrumb-item"><a href="#">asdas</a></li>
-                <li class="breadcrumb-item active"></li>
-            </ol>
-            <section>
-                <!-- div.container>div.row>div.col-md-12 -->
-                <div class="container">
-                    <div class="row">
-                        <h1 style="text-align: center;">SİPARİŞLER</h1>
-                        <div class="col-md-12">
-                            <!-- div.table.table-sm.table-striped.table.hover.text-center.table-dark>caption{siparisler}+thead>tr>th*6+tbody>tr>td*6+tfoot>tr>td*2 -->
-                            <table class="table table-sm table-striped table hover text-center table-dark">
-                                <caption>
-
-                                </caption>
+            <div class="container ">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="content/picture/sefiller.webp" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h1 class="card-title" id="kitapAdi"></h1>
+                            <h4 class="card-text">Açıklama</h4>
+                            <p class="card-text" id="kitapHakkinda"></p>
+                            <table>
                                 <thead>
                                     <tr>
-                                        <th>Sipariş Ad</th>
-                                        <th>Sipariş Durumu</th>
-                                        <th>Sipariş Firma</th>
-                                        <th>Sipariş Tarih</th>
-                                        <th>Sipariş Kodu</th>
-                                        <th>Ürün Fiyat</th>
-                                        <th>#</th>
-
+                                        <th>Açıklamalar</td>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>
-                                            <p id="kitapAdi"></p>
-                                        </td>
-                                        <td>
-                                            <p id="SiparisDurum"></p>
-                                        </td>
-                                        <td>
-                                            <label for="" id="kitapYayinevi"></label></p>
-                                        </td>
-                                        <td>
-                                            <p id="SiparisTarih"></p>
-                                        </td>
-                                        <td>
-                                            <p id="SiparisİD"></p>
-                                        </td>
-                                        <td>
-                                            <p id="kitapFiyat"></p>
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-info" id="company"><span
-                                                    class="fa fa-building"></span></button>
-                                            <button class="btn btn-danger" id="orderedTrash"><span
-                                                    class="fa fa-trash"></span></button>
-                                        </td>
-
+                                        <td>Yazar:</td>
+                                        <td id="kitapYazar"></td>
                                     </tr>
-                                    <!--  -->
                                     <tr>
-                                        <td>
-                                            <p id="SiparisAd"></p>
-                                        </td>
-                                        <td>
-                                            <p id="SiparisDurum"></p>
-                                        </td>
-                                        <td>
-                                            <label for="" id="SiparisFirmaa"></label></p>
-                                        </td>
-                                        <td>
-                                            <p id="SiparisTarih"></p>
-                                        </td>
-                                        <td>
-                                            <p id="SiparisİD"></p>
-                                        </td>
-                                        <td>
-                                            <p id="SiparisFiyat"></p>
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-info" id="company"><span
-                                                    class="fa fa-building"></span></button>
-                                            <button class="btn btn-danger" id="orderedTrash"><span
-                                                    class="fa fa-trash"></span></button>
-                                        </td>
-
+                                        <td>Kategori:</td>
+                                        <td></td>
                                     </tr>
+                                    <tr>
+                                        <td>Çevirmen:</td>
+                                        <td id="kitapCevirmen">Ocak</td>
+  
+                                    </tr>
+                                    <tr>
+                                        <td>Orjinal Adı:</td>
+                                        <td id="orjinalAdi"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Yılı:</td>
+                                        <td id="kitapYil"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ISBN:</td>
+                                        <td id="kitapISB"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sayfa Sayisi:</td>
+                                        <td id="kitapSayfa"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fiyat:</td>
+                                        <td id="kitapFiyat"></td>
+                                    </tr>
+                                    
                                 </tbody>
-
-                                <tfoot>
-                                    <tr>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                </tfoot>
                             </table>
+
+
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+
 
         </main>
         <!-- footer start -->
-        <footer class="fixed-bottom44 bg-black "
-            style=" color: white; text-align: center; ">
+        <footer class="fixed-bottom44 bg-black " style=" color: white; text-align: center; ">
             <div class="row44">
                 <div class="row">
                     <div class="col-4" style="margin-top: 80px;"><!-- Sol taraf -->
@@ -540,6 +421,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script>
+    $(function () {
+      // Sadece navbar div'ini alıyoruz
+      $('#navbar-container').load('index.html #navbar > *'); /* jquery hata verdi */
+    });
+  </script>
 
 </body>
 

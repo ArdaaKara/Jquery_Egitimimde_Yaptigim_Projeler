@@ -1,9 +1,9 @@
 
-const Kitaplar = {
+const kitaplar = {
     "sefiller": {
         UrunAdi: "Sefiller - 2 Cilt Takım",
         OrjinalAdi: "Les Misérables",
-        hakkinda: "Victor Hugo (1802-1885): ...",
+        hakkinda: "Victor Hugo (1802-1885): Fransız edebiyatının gelmiş geçmiş en büyük yazarlarındandır. Şiirleri, oyunları ve romanları ile tanınır. Romantizm akımının Fransa’daki temsilcisidir. Edebiyat alanındaki devasa başarılarının yanında politik hayatta da etkin bir rol üstlendi; bu nedenle sürgün cezasına çarptırıldı, cezasını tamamlamasına rağmen İmparatorluk yıkılana dek Fransa’ya dönmedi. İlk kez 1862 yılında yayımlanan Sefiller yazarın Notre-Dame’ın Kamburu ile “din”, Deniz İşçileri ile “doğa” konularını işlediği roman üçlemesinin “toplum”u ele alan, en görkemli ayağıdır. Bu destansı roman Fransız toplumundan yola çıkarak, kozmolojik bir bakış ve eşsiz bir duyarlılıkla insanlığa ulaşır. Fantine’in, Cosette’in, Marius’ün, Saint-Denis Sokağı barikatlarının; Paris’in, Javert’in ve Jean Valjean’ın sefaletten sevgiye, felaketten iyiliğe ve karanlıktan aydınlığa uzanan hikâyeleri Hasan Âli Yücel Klasikler Dizisi’nin 250. kitabında okurlarla buluşuyor.",
         foto: "https://www.nezih.com.tr/sefiller-2-cilt-takim-58232-150020-58-O.jpg",
         yayinevi: "İş Bankası Kültür Yayınları",
         Fiyat: "700 TL",
@@ -11,7 +11,7 @@ const Kitaplar = {
         Cevirmen: "Volkan Yalçıktokul",
         Yil: "2015",
         SayfaSayisi: "1720",
-        ISB: 9786053324744,
+        isbn: "9786053324744",
         kategori: "Roman",
     },
     // başka kitaplar
@@ -140,7 +140,7 @@ $("#Siparisİptal").click(function () {
 });
 /*  */
 // 📝 localStorage’a veriyi kaydet
-localStorage.setItem("sefiller", JSON.stringify(Kitaplar["sefiller"]));
+localStorage.setItem("sefiller", JSON.stringify(kitaplar["sefiller"]));
 
 // 📤 Veriyi sayfaya yazdıran fonksiyon
 function kitapYukle(id) {
@@ -175,10 +175,11 @@ function kitapYukle(id) {
     safeSet("kitapFiyat", kitap.Fiyat);
     safeSetSrc("kitapFoto", kitap.foto);
     safeSetSrc("kitapFoto2", kitap.foto);
+    safeSetSrc("kitapISB", kitap.isbn);
 }
 
 /* NUTUK */
-localStorage.setItem("nutuk", JSON.stringify(Kitaplar["NUTUK"]));
+localStorage.setItem("nutuk", JSON.stringify(kitaplar["NUTUK"]));
 function NutukkitapYukle(id) {
     const kitap = JSON.parse(localStorage.getItem(id));
     if (!kitap) {
@@ -214,7 +215,7 @@ function NutukkitapYukle(id) {
 }
 
 /* Türkçülüğün Esasları */
-localStorage.setItem("TE", JSON.stringify(Kitaplar["TurkculuguEsaslari"]));
+localStorage.setItem("TE", JSON.stringify(kitaplar["TurkculuguEsaslari"]));
 function TEkitapYukle(id) {
     const kitap = JSON.parse(localStorage.getItem(id));
     if (!kitap) {
@@ -250,7 +251,7 @@ function TEkitapYukle(id) {
 }
 
 /* HarryPotter */
-localStorage.setItem("HP", JSON.stringify(Kitaplar["HarryPotter"]));
+localStorage.setItem("HP", JSON.stringify(kitaplar["HarryPotter"]));
 function HPkitapYukle(id) {
     const kitap = JSON.parse(localStorage.getItem(id));
     if (!kitap) {
@@ -286,7 +287,7 @@ function HPkitapYukle(id) {
 }
 
 /* KendimeDüşünceler */
-localStorage.setItem("KendimceDüsünceler", JSON.stringify(Kitaplar["KendimceDüsüncelerr"]));
+localStorage.setItem("KendimceDüsünceler", JSON.stringify(kitaplar["KendimceDüsüncelerr"]));
 function KendimceDüsüncelerkitapYukle(id) {
     const kitap = JSON.parse(localStorage.getItem(id));
     if (!kitap) {
@@ -321,7 +322,7 @@ function KendimceDüsüncelerkitapYukle(id) {
     safeSetSrc("KendimceDüsünceler_Foto2", kitap.foto);
 }
 /* HarryCocuk */
-localStorage.setItem("HPC", JSON.stringify(Kitaplar["HarryCocuk"]));
+localStorage.setItem("HPC", JSON.stringify(kitaplar["HarryCocuk"]));
 function HPCkitapYukle(id) {
     const kitap = JSON.parse(localStorage.getItem(id));
     if (!kitap) {
@@ -356,7 +357,7 @@ function HPCkitapYukle(id) {
     safeSetSrc("HPC_Foto2", kitap.foto);
 }
 /* Simyaci */
-localStorage.setItem("Simyaciii", JSON.stringify(Kitaplar["Simyaci"]));
+localStorage.setItem("Simyaciii", JSON.stringify(kitaplar["Simyaci"]));
 function SimyacikitapYukle(id) {
     const kitap = JSON.parse(localStorage.getItem(id));
     if (!kitap) {
@@ -391,7 +392,7 @@ function SimyacikitapYukle(id) {
     safeSetSrc("Simyaci_Foto2", kitap.foto);
 }
 /* Zafer Sızlanarak Kazanılmaz */
-localStorage.setItem("ZSKK", JSON.stringify(Kitaplar["ZSK"]));
+localStorage.setItem("ZSKK", JSON.stringify(kitaplar["ZSK"]));
 function ZSKKkitapYukle(id) {
     const kitap = JSON.parse(localStorage.getItem(id));
     if (!kitap) {
