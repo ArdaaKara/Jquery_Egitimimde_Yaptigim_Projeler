@@ -29,7 +29,7 @@
 <body>
     <div class="sayfa">
         <header>
-<div id="navbar-container"></div>
+            <div id="navbar-container"></div>
         </header>
         <main>
             <div class="container ">
@@ -42,57 +42,34 @@
                             <h1 class="card-title" id="kitapAdi"></h1>
                             <h4 class="card-text">Açıklama</h4>
                             <p class="card-text" id="kitapHakkinda"></p>
-                            <table>
+                            <table id="orderTable"
+                                class="table table-sm table-striped table hover text-center table-dark ">
                                 <thead>
                                     <tr>
-                                        <th>Açıklamalar</td>
+                                        <th>Yazar</th>
+                                        <th>Kategori</th>
+                                        <th>Çevirmen</th>
+                                        <th>Orjinal Adi</th>
+                                        <th>Yıl</th>
+                                        <th>ISBN</th>
+                                        <th>SayfaSayisi</th>
+                                        <th>Fiyat</th>
+
                                     </tr>
                                 </thead>
                                 <tbody>
+                                </tbody>
+                                <tfoot>
                                     <tr>
-                                        <td>Yazar:</td>
-                                        <td id="kitapYazar"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Kategori:</td>
+                                        <td></td>
                                         <td></td>
                                     </tr>
-                                    <tr>
-                                        <td>Çevirmen:</td>
-                                        <td id="kitapCevirmen">Ocak</td>
-  
-                                    </tr>
-                                    <tr>
-                                        <td>Orjinal Adı:</td>
-                                        <td id="orjinalAdi"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Yılı:</td>
-                                        <td id="kitapYil"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>ISBN:</td>
-                                        <td id="kitapISB"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Sayfa Sayisi:</td>
-                                        <td id="kitapSayfa"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Fiyat:</td>
-                                        <td id="kitapFiyat"></td>
-                                    </tr>
-                                    
-                                </tbody>
+                                </tfoot>
                             </table>
-
-
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </main>
         <!-- footer start -->
         <footer class="fixed-bottom44 bg-black " style=" color: white; text-align: center; ">
@@ -165,7 +142,7 @@
 
                             Günümüzde, Hasan Âli Yücel Klasikler Dizisi, Modern Klasikler Dizisi, Çocuk ve Gençlik,
                             Araştırma ve İnceleme alanlarında yayımladığı kitaplarıyla güçlü bir portföye sahiptir.</p>
-                        <!-- EMBET YAPISI: <div class="form-group "><label for=""><input type="checkbox" class="form-checkbox" required><a href="" style="color: black;"> Sözleşmeyi</a> okudum ve kabul ediyorum.</label> -->
+                        <!-- EMET YAPISI: <div class="form-group "><label for=""><input type="checkbox" class="form-checkbox" required><a href="" style="color: black;"> Sözleşmeyi</a> okudum ve kabul ediyorum.</label> -->
                     </form>
                 </div>
             </div>
@@ -407,7 +384,7 @@
     <link rel="node_modules/bootstrap/dist/css/bootstrap.css">
     </link>
     <script src="js/main.js"></script>
-    <script src="js/data.js" defer></script>
+    <script src="js/data.js"></script>
 
 
     <!-- Optional JavaScript -->
@@ -422,11 +399,51 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script>
-    $(function () {
-      // Sadece navbar div'ini alıyoruz
-      $('#navbar-container').load('index.html #navbar > *'); /* jquery hata verdi */
-    });
-  </script>
+        $(function () {
+            // Sadece navbar div'ini alıyoruz
+            $('#navbar-container').load('index.html #navbar > *'); /* jquery hata verdi */
+        });
+    </script>
+    <script type="text/JavaScript">
+
+         let kitap_card =''
+       $.each(kitaplar, function (i,kitap) {
+       if (kitap.UrunAdi === "Sefiller - 2 Cilt Takım") {
+        kitap_card += `
+        <tr>
+                <td>
+                    <p class="UrunAd">${kitap.UrunAdi}</p>
+                </td>
+                <td>
+                    <p class="SiparisDurum">${kitap.kategori}</p>
+                </td>
+                <td>
+                    <label for="" class="SiparisFirmaa">${kitap.Cevirmen}</label></p>
+                </td>
+                <td>
+                    <p class="SiparisTarih">${kitap.OrjinalAdi}</p>
+                </td>
+                <td>
+                    <p class="SiparisİD">${kitap.Yil}</p>
+                </td>
+                <td>
+                    <p class="SiparisFiyat">${kitap.isbn}</p>
+                </td>
+                <td>
+                    <p class="SiparisFiyat">${kitap.SayfaSayisi}</p>
+                </td>
+                <td>
+                    <p class="SiparisFiyat">${kitap.Fiyat}</p>
+                </td>
+            </tr>
+            `
+
+        return false; // Döngüyü durdurur
+    }
+
+       })
+       $('#orderTable tbody').html(kitap_card)
+    </script>
 
 </body>
 

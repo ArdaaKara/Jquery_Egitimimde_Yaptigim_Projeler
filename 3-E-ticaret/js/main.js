@@ -1,4 +1,4 @@
-$(function () {
+/* $(function () {
     var autoComplete=[
         "Roman",
         "CSS",
@@ -9,7 +9,7 @@ $(function () {
     $("#tags").autocomplete({
         source:autoComplete
     });
-});
+}); */
 $(function () {
     $("#btn_giris").click(function () {
         $("#myUye").modal('show');
