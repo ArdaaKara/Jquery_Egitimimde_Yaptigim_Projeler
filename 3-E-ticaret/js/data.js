@@ -438,7 +438,7 @@ window.onload = function () {
     ZSKKkitapYukle("ZSKK");
 };
 
-// AJAX
+// AJAX XML
 /* function prepareURL(url, id) {
     if (id===null) {
         return url;

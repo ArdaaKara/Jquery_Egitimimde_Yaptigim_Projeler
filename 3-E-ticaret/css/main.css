@@ -291,7 +291,12 @@ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 /*  */
 
-
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 200px; /* Sabit genişlik verilmeli */
+}
 
 
 
