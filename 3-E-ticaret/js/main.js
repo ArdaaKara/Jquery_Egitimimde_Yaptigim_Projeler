@@ -189,7 +189,6 @@ document.addEventListener("DOMContentLoaded", () => {
     </footer>
     `;
     const FooterContainer = document.getElementById("footer");
-
     if (FooterContainer) {
         FooterContainer.innerHTML = FooterHTML;
     }
@@ -257,4 +256,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 }); */
 // sepet modal end
-
